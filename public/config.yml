@@ -20,6 +20,7 @@ i18n:
 collections:
   - name: "home"
     i18n: true
+    create: true
     folder: content/home
     label: "Home"
     identifier_field: slug
