@@ -27,6 +27,15 @@ export default function RootLayout({
       <body>
         {children}
         <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            if (typeof CMS !== undefined) {
+              CMS.registerPreviewStyle("/admin.css");
+            }
+        `,
+          }}
+        />
       </body>
     </html>
   );
