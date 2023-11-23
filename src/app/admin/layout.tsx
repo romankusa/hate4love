@@ -25,7 +25,7 @@ export default function RootLayout({
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <style
           dangerouslySetInnerHTML={{
-            __html: `body {background: none;}`,
+            __html: `body {background: rgb(239, 240, 244);}`,
           }}
         ></style>
       </head>

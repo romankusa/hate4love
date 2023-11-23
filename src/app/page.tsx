@@ -1,3 +1,5 @@
+import { attributes } from "../../content/en/home.md";
+
 export default function Home() {
-  return <div>test</div>;
+  return <div>{attributes.title}</div>;
 }
