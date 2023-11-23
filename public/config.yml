@@ -22,11 +22,12 @@ collections:
     i18n: true
     folder: content/home
     label: "Home"
-    identifier_field: id
+    identifier_field: slug
     fields:
-      - label: Id
-        name: id
-        widget: string
+      - label: "Slug"
+        name: "slug"
+        widget: "hidden"
+        default: "home"
         i18n: duplicate
       - label: Title
         name: title
