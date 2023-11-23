@@ -18,11 +18,10 @@ i18n:
   default_locale: en
 
 collections:
-  - name: "home"
+  - name: "pages"
     i18n: true
-    create: true
     folder: content
-    label: "Home"
+    label: "Pages"
     identifier_field: slug
     fields:
       - label: "Slug"
