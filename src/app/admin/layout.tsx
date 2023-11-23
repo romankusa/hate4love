@@ -23,19 +23,15 @@ export default function RootLayout({
         />
         <title>Content Manager</title>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `body {background: none;}`,
+          }}
+        ></style>
       </head>
       <body>
         {children}
         <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            if (typeof CMS !== undefined) {
-              CMS.registerPreviewStyle("/admin.css");
-            }
-        `,
-          }}
-        />
       </body>
     </html>
   );
