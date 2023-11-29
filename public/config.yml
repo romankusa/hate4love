@@ -37,11 +37,17 @@ collections:
         summary: "{{fields.titulo}}"
         i18n: true
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+            }
           - {
               label: "Description",
               name: "description",
               widget: "string",
+              i18n: true,
             }
       - label: Header
         name: header
@@ -54,17 +60,39 @@ collections:
           - label: "Links"
             name: "links"
             widget: "list"
+            i18n: true
             summary: "{{fields.title}}"
             fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Link, name: link, widget: string }
+              - {
+                  label: Title,
+                  name: title,
+                  widget: string,
+                  i18n: true,
+                }
+              - {
+                  label: Link,
+                  name: link,
+                  widget: string,
+                  i18n: true,
+                }
           - label: Button
             name: button
             widget: object
+            i18n: true
             summary: "{{fields.title}}"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Link", name: "link", widget: "string" }
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  i18n: true,
+                }
+              - {
+                  label: "Link",
+                  name: "link",
+                  widget: "string",
+                  i18n: true,
+                }
       - label: Hero
         name: hero
         widget: object
@@ -73,12 +101,15 @@ collections:
           - label: "Text"
             name: "text"
             widget: "string"
+            i18n: true
           - label: "Highlighted text"
             name: "highlight"
             widget: "string"
+            i18n: true
           - label: "Background image"
             name: "background"
             widget: "image"
+            i18n: true
       - label: Sections
         name: sections
         i18n: true
@@ -116,13 +147,24 @@ collections:
             summary: "{{fields.text}}"
             i18n: true
             fields:
-              - { label: "Text", name: "text", widget: "string" }
+              - {
+                  label: "Text",
+                  name: "text",
+                  widget: "string",
+                  i18n: true,
+                }
               - {
                   label: "Highlighted text",
                   name: "highlight",
                   widget: "string",
+                  i18n: true,
                 }
-              - { label: "Icon", name: "icon", widget: "image" }
+              - {
+                  label: "Icon",
+                  name: "icon",
+                  widget: "image",
+                  i18n: true,
+                }
           - label: "Body"
             name: "body"
             widget: "markdown"
@@ -133,33 +175,70 @@ collections:
             summary: "{{fields.title}}"
             i18n: true
             fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Link, name: link, widget: string }
-              - { label: Secondary, name: secondary, widget: boolean }
+              - {
+                  label: Title,
+                  name: title,
+                  widget: string,
+                  i18n: true,
+                }
+              - {
+                  label: Link,
+                  name: link,
+                  widget: string,
+                  i18n: true,
+                }
+              - {
+                  label: Secondary,
+                  name: secondary,
+                  widget: boolean,
+                  i18n: true,
+                }
           - label: "Numbers"
             name: "numbers"
             widget: "list"
             summary: "{{fields.text}}"
             i18n: true
             fields:
-              - { label: Number, name: Number, widget: string }
-              - { label: Text, name: text, widget: string }
+              - {
+                  label: Number,
+                  name: Number,
+                  widget: string,
+                  i18n: true,
+                }
+              - {
+                  label: Text,
+                  name: text,
+                  widget: string,
+                  i18n: true,
+                }
           - label: "Carousel"
             name: "carousel"
             widget: "list"
             summary: "{{fields.highlight}}"
             i18n: true
             fields:
-              - { label: Text, name: text, widget: string }
+              - {
+                  label: Text,
+                  name: text,
+                  widget: string,
+                  i18n: true,
+                }
               - {
                   label: Highlighted text,
                   name: highlight,
                   widget: string,
+                  i18n: true,
                 }
               - {
                   label: Text separator,
                   name: separator,
                   widget: string,
                   default: "=",
+                  i18n: true,
                 }
-              - { label: Large text, name: largeText, widget: string }
+              - {
+                  label: Large text,
+                  name: largeText,
+                  widget: string,
+                  i18n: true,
+                }
