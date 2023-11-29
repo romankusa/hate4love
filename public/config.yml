@@ -35,6 +35,7 @@ collections:
         name: metadata
         widget: object
         summary: "{{fields.titulo}}"
+        i18n: true
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - {
@@ -45,6 +46,7 @@ collections:
       - label: Header
         name: header
         widget: object
+        i18n: true
         fields:
           - label: "Logo"
             name: "logo"
@@ -66,6 +68,7 @@ collections:
       - label: Hero
         name: hero
         widget: object
+        i18n: true
         fields:
           - label: "Text"
             name: "text"
@@ -78,6 +81,7 @@ collections:
             widget: "image"
       - label: Sections
         name: sections
+        i18n: true
         widget: list
         summary: "{{fields.type}}"
         hint: "Depending on the type you select, it will show different sections and information. Only fill the fields specific to the section you want to display."
@@ -102,6 +106,7 @@ collections:
           - label: "Images"
             name: "images"
             widget: "image"
+            i18n: true
             media_library:
               config:
                 multiple: true
@@ -109,6 +114,7 @@ collections:
             name: "title"
             widget: "object"
             summary: "{{fields.text}}"
+            i18n: true
             fields:
               - { label: "Text", name: "text", widget: "string" }
               - {
@@ -120,10 +126,12 @@ collections:
           - label: "Body"
             name: "body"
             widget: "markdown"
+            i18n: true
           - label: "Buttons"
             name: "buttons"
             widget: "list"
             summary: "{{fields.title}}"
+            i18n: true
             fields:
               - { label: Title, name: title, widget: string }
               - { label: Link, name: link, widget: string }
@@ -132,6 +140,7 @@ collections:
             name: "numbers"
             widget: "list"
             summary: "{{fields.text}}"
+            i18n: true
             fields:
               - { label: Number, name: Number, widget: string }
               - { label: Text, name: text, widget: string }
@@ -139,6 +148,7 @@ collections:
             name: "carousel"
             widget: "list"
             summary: "{{fields.highlight}}"
+            i18n: true
             fields:
               - { label: Text, name: text, widget: string }
               - {
