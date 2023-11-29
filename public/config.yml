@@ -20,6 +20,8 @@ i18n:
 collections:
   - name: "pages"
     i18n: true
+    create: true
+    format: "json"
     folder: content
     label: "Pages"
     identifier_field: slug

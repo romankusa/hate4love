@@ -1,6 +1,0 @@
----
-slug: home
-title: MY TITLE!!!
-date: 2023-11-23T13:29:20.456Z
----
-f﻿ghfgh
