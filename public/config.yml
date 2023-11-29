@@ -29,14 +29,125 @@ collections:
         widget: "hidden"
         default: "home"
         i18n: duplicate
-      - label: Title
-        name: title
-        widget: string
-        i18n: true
-      - label: Date
-        name: date
-        widget: datetime
-        i18n: duplicate
-      - label: Body
-        name: body
-        widget: markdown
+      - label: Metadata
+        name: metadata
+        widget: object
+        summary: "{{fields.titulo}}"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+            }
+      - label: Header
+        name: header
+        widget: object
+        fields:
+          - label: "Logo"
+            name: "logo"
+            widget: "image"
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Link, name: link, widget: string }
+          - label: Button
+            name: button
+            widget: object
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+      - label: Hero
+        name: hero
+        widget: object
+        fields:
+          - label: "Text"
+            name: "text"
+            widget: "string"
+          - label: "Highlighted text"
+            name: "highlight"
+            widget: "string"
+          - label: "Background image"
+            name: "background"
+            widget: "image"
+      - label: Sections
+        name: sections
+        widget: list
+        summary: "{{fields.type}}"
+        hint: "Depending on the type you select, it will show different sections and information. Only fill the fields specific to the section you want to display."
+        fields:
+          - label: Type
+            name: type
+            widget: select
+            options:
+              - { label: "Text", value: "TEXT" }
+              - {
+                  label: "Text, Image Right",
+                  value: "TEXT_IMAGE_RIGHT",
+                }
+              - {
+                  label: "Text, Image Left",
+                  value: "TEXT_IMAGE_LEFT",
+                }
+              - { label: "Numbers", value: "NUMBERS" }
+              - { label: "Carousel", value: "CAROUSEL" }
+              - { label: "Gallery", value: "GALLERY" }
+              - { label: "Partners", value: "PARTNERS" }
+          - label: "Images"
+            name: "images"
+            widget: "image"
+            media_library:
+              config:
+                multiple: true
+          - label: "Title"
+            name: "title"
+            widget: "object"
+            summary: "{{fields.text}}"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - {
+                  label: "Highlighted text",
+                  name: "highlight",
+                  widget: "string",
+                }
+              - { label: "Icon", name: "icon", widget: "image" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+          - label: "Buttons"
+            name: "buttons"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Link, name: link, widget: string }
+              - { label: Secondary, name: secondary, widget: boolean }
+          - label: "Numbers"
+            name: "numbers"
+            widget: "list"
+            summary: "{{fields.text}}"
+            fields:
+              - { label: Number, name: Number, widget: string }
+              - { label: Text, name: text, widget: string }
+          - label: "Carousel"
+            name: "carousel"
+            widget: "list"
+            summary: "{{fields.highlight}}"
+            fields:
+              - { label: Text, name: text, widget: string }
+              - {
+                  label: Highlighted text,
+                  name: highlight,
+                  widget: string,
+                }
+              - {
+                  label: Text separator,
+                  name: separator,
+                  widget: string,
+                  default: "=",
+                }
+              - { label: Large text, name: largeText, widget: string }
