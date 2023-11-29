@@ -1,5 +1,6 @@
-import { attributes } from "../../content/en/home.md";
+// import { attributes } from "../../content/en/home.md";
 
 export default function Home() {
-  return <div>{attributes.title}</div>;
+  return <h1>aaas</h1>;
+  // return <div>{attributes.title}</div>;
 }
