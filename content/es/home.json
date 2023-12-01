@@ -1,0 +1,21 @@
+{
+  "slug": "home",
+  "sections": [
+    {
+      "carousel": [
+        {
+          "separator": "="
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "ggg",
+    "description": "ggg"
+  },
+  "hero": {
+    "text": "sdfsdf",
+    "highlight": "223",
+    "background": "/logo.png"
+  }
+}
