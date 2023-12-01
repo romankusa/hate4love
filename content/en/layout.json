@@ -1,0 +1,20 @@
+{
+  "slug": "layout",
+  "header": {
+    "links": [
+      {
+        "title": "szdfasd",
+        "link": "asdasd"
+      }
+    ],
+    "button": {
+      "title": "asdasd",
+      "link": "asdasd"
+    },
+    "logo": "/logo.png"
+  },
+  "footer": {
+    "copyright": "sssss",
+    "logo": "/logo.png"
+  }
+}

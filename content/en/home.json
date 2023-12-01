@@ -1,0 +1,21 @@
+{
+  "slug": "home",
+  "sections": [
+    {
+      "carousel": [
+        {
+          "separator": "="
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "asdas",
+    "description": "asdad"
+  },
+  "hero": {
+    "text": "sdcs",
+    "highlight": "sdfsdf",
+    "background": "/logo.png"
+  }
+}
