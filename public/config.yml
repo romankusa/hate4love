@@ -42,6 +42,8 @@ collections:
           - label: "Links"
             name: "links"
             widget: "list"
+            minimize_collapsed: true
+            collapsed: true
             i18n: true
             summary: "{{fields.title}}"
             fields:
@@ -90,6 +92,8 @@ collections:
           - label: "Link sections"
             name: "linkSections"
             widget: "list"
+            minimize_collapsed: true
+            collapsed: true
             i18n: true
             summary: "{{fields.title}}"
             fields:
@@ -102,6 +106,8 @@ collections:
               - label: Links
                 name: links
                 widget: list
+                minimize_collapsed: true
+                collapsed: true
                 i18n: true
                 fields:
                   - {
@@ -119,6 +125,8 @@ collections:
           - label: Additional links
             name: additionalLinks
             widget: list
+            minimize_collapsed: true
+            collapsed: true
             i18n: true
             fields:
               - {
@@ -186,6 +194,8 @@ collections:
         name: sections
         i18n: true
         widget: list
+        minimize_collapsed: true
+        collapsed: true
         summary: "{{fields.type}}"
         hint: "Depending on the type you select, it will show different sections and information. Only fill the fields specific to the section you want to display."
         fields:
@@ -245,6 +255,8 @@ collections:
           - label: "Buttons"
             name: "buttons"
             widget: "list"
+            minimize_collapsed: true
+            collapsed: true
             summary: "{{fields.title}}"
             i18n: true
             fields:
@@ -269,6 +281,8 @@ collections:
           - label: "Numbers"
             name: "numbers"
             widget: "list"
+            minimize_collapsed: true
+            collapsed: true
             summary: "{{fields.text}}"
             i18n: true
             fields:
@@ -287,6 +301,8 @@ collections:
           - label: "Carousel"
             name: "carousel"
             widget: "list"
+            minimize_collapsed: true
+            collapsed: true
             summary: "{{fields.highlight}}"
             i18n: true
             fields:
