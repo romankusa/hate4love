@@ -3,12 +3,12 @@
   "header": {
     "logo": "/logo.png",
     "button": {
-      "title": "aaaa",
-      "link": "sdsd"
+      "title": "asda",
+      "link": "asd"
     }
   },
   "footer": {
-    "copyright": "asdasd",
-    "logo": "/logo.png"
+    "logo": "/logo.png",
+    "copyright": "asdasd"
   }
 }
