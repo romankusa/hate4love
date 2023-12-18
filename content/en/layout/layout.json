@@ -1,0 +1,14 @@
+{
+  "slug": "layout",
+  "header": {
+    "logo": "/logo.png",
+    "button": {
+      "title": "aaaa",
+      "link": "sdsd"
+    }
+  },
+  "footer": {
+    "copyright": "asdasd",
+    "logo": "/logo.png"
+  }
+}
