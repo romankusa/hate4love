@@ -1,0 +1,13 @@
+{
+  "header": {
+    "button": {
+      "title": "sdfs",
+      "link": "dfsdfs"
+    },
+    "logo": "/logo.png"
+  },
+  "footer": {
+    "logo": "/logo.png",
+    "copyright": "sdfsdf"
+  }
+}
