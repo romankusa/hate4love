@@ -3,19 +3,6 @@ backend:
   branch: main
 media_folder: "public/images" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/" # The src attribute for uploaded media will begin with /images/uploads
-i18n:
-  # Required and can be one of multiple_folders, multiple_files or single_file
-  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
-  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
-  # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: single_file
-
-  # Required - a list of locales to show in the editor UI
-  locales: [en, es]
-
-  # Optional, defaults to the first item in locales.
-  # The locale to be used for fields validation and as a baseline for the entry.
-  default_locale: en
 
 collections:
   - name: "pages"
@@ -30,7 +17,7 @@ collections:
         file: content/layout.json
         format: "json"
         label: "Layout"
-        identifier_field: slug
+        # identifier_field: slug
         fields:
           - label: "Slug"
             name: "slug"
@@ -154,7 +141,7 @@ collections:
         file: content/home.json
         format: "json"
         label: "Home"
-        identifier_field: slug
+        # identifier_field: slug
         fields:
           - label: "Slug"
             name: "slug"
