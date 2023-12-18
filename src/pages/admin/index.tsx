@@ -19,7 +19,7 @@ export default function Admin() {
       ></style>
       <script
         defer
-        src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"
+        src="https://unpkg.com/decap-cms@~3.0.0/dist/decap-cms.js"
       ></script>
     </Head>
   );
