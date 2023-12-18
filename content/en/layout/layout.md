@@ -1,11 +1,11 @@
 ---
 slug: layout
 header:
+  logo: /logo.png
   button:
-    title: aa
-    link: aaa
-  logo: /logo.png
+    title: asda
+    link: sdasd
 footer:
+  copyright: asdasd
   logo: /logo.png
-  copyright: aa
 ---
