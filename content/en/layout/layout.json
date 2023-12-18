@@ -1,0 +1,14 @@
+{
+  "slug": "Layout",
+  "header": {
+    "logo": "/logo.png",
+    "button": {
+      "title": "af",
+      "link": "asdf"
+    }
+  },
+  "footer": {
+    "copyright": "sadf",
+    "logo": "/logo.png"
+  }
+}
