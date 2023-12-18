@@ -9,17 +9,18 @@ i18n:
   default_locale: en
 
 collections:
-  - name: "layout"
+  - name: "layout_data"
+    label: "Layout"
     i18n: true
     create: true
     folder: content/layout
-    label: "Layout"
+    format: "json"
     identifier_field: slug
     fields:
       - label: "Slug"
         name: "slug"
         widget: "hidden"
-        default: "layout"
+        default: "Layout"
         i18n: duplicate
       - label: Header
         name: header
@@ -135,6 +136,7 @@ collections:
                 }
   - name: "home"
     i18n: true
+    format: "json"
     folder: content/home
     label: "Home"
     identifier_field: slug
