@@ -25,5 +25,5 @@ export const getStaticProps = async (context: any) => {
 export default function LocaleHome(props: any) {
   const data = getContent(props.locale);
 
-  return <h1>{data.home.hero.text}</h1>;
+  return <h1>{data?.home?.hero?.text}</h1>;
 }
