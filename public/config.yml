@@ -8,7 +8,7 @@ i18n:
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
   # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
   # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_files
+  structure: single_file
 
   # Required - a list of locales to show in the editor UI
   locales: [en, es]
@@ -18,95 +18,120 @@ i18n:
   default_locale: en
 
 collections:
-  - name: "layout"
-    i18n: true
-    create: true
-    format: "json"
-    folder: content/layout
-    label: "Layout"
-    identifier_field: slug
-    fields:
-      - label: "Slug"
-        name: "slug"
-        widget: "hidden"
-        default: "layout"
-        i18n: duplicate
-      - label: Header
-        name: header
-        widget: object
+  - name: "pages"
+    label: "Pages"
+    i18n:
+      structure: single_file
+      locales: [en, es]
+      default_locale: en
+    files:
+      - name: "layout"
         i18n: true
+        file: content/layout.json
+        format: "json"
+        label: "Layout"
+        identifier_field: slug
         fields:
-          - label: "Logo"
-            name: "logo"
-            widget: "image"
-            allow_multiple: false
-          - label: "Links"
-            name: "links"
-            widget: "list"
-            minimize_collapsed: true
-            collapsed: true
-            i18n: true
-            summary: "{{fields.title}}"
-            fields:
-              - {
-                  label: Title,
-                  name: title,
-                  widget: string,
-                  i18n: true,
-                }
-              - {
-                  label: Link,
-                  name: link,
-                  widget: string,
-                  i18n: true,
-                }
-          - label: Button
-            name: button
+          - label: "Slug"
+            name: "slug"
+            widget: "hidden"
+            default: "layout"
+            i18n: duplicate
+          - label: Header
+            name: header
             widget: object
             i18n: true
-            summary: "{{fields.title}}"
             fields:
-              - {
-                  label: "Title",
-                  name: "title",
-                  widget: "string",
-                  i18n: true,
-                }
-              - {
-                  label: "Link",
-                  name: "link",
-                  widget: "string",
-                  i18n: true,
-                }
-      - label: Footer
-        name: footer
-        widget: object
-        i18n: true
-        fields:
-          - label: "Logo"
-            name: "logo"
-            widget: "image"
-            allow_multiple: false
-          - label: "Copyright"
-            name: "copyright"
-            widget: "string"
+              - label: "Logo"
+                name: "logo"
+                widget: "image"
+                allow_multiple: false
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                minimize_collapsed: true
+                collapsed: true
+                i18n: true
+                summary: "{{fields.title}}"
+                fields:
+                  - {
+                      label: Title,
+                      name: title,
+                      widget: string,
+                      i18n: true,
+                    }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      i18n: true,
+                    }
+              - label: Button
+                name: button
+                widget: object
+                i18n: true
+                summary: "{{fields.title}}"
+                fields:
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      i18n: true,
+                    }
+                  - {
+                      label: "Link",
+                      name: "link",
+                      widget: "string",
+                      i18n: true,
+                    }
+          - label: Footer
+            name: footer
+            widget: object
             i18n: true
-          - label: "Link sections"
-            name: "linkSections"
-            widget: "list"
-            minimize_collapsed: true
-            collapsed: true
-            i18n: true
-            summary: "{{fields.title}}"
             fields:
-              - {
-                  label: Title,
-                  name: title,
-                  widget: string,
-                  i18n: true,
-                }
-              - label: Links
-                name: links
+              - label: "Logo"
+                name: "logo"
+                widget: "image"
+                allow_multiple: false
+              - label: "Copyright"
+                name: "copyright"
+                widget: "string"
+                i18n: true
+              - label: "Link sections"
+                name: "linkSections"
+                widget: "list"
+                minimize_collapsed: true
+                collapsed: true
+                i18n: true
+                summary: "{{fields.title}}"
+                fields:
+                  - {
+                      label: Title,
+                      name: title,
+                      widget: string,
+                      i18n: true,
+                    }
+                  - label: Links
+                    name: links
+                    widget: list
+                    minimize_collapsed: true
+                    collapsed: true
+                    i18n: true
+                    fields:
+                      - {
+                          label: "Title",
+                          name: "title",
+                          widget: "string",
+                          i18n: true,
+                        }
+                      - {
+                          label: "Link",
+                          name: "link",
+                          widget: "string",
+                          i18n: true,
+                        }
+              - label: Additional links
+                name: additionalLinks
                 widget: list
                 minimize_collapsed: true
                 collapsed: true
@@ -124,11 +149,22 @@ collections:
                       widget: "string",
                       i18n: true,
                     }
-          - label: Additional links
-            name: additionalLinks
-            widget: list
-            minimize_collapsed: true
-            collapsed: true
+      - name: "home"
+        i18n: true
+        file: content/home.json
+        format: "json"
+        label: "Home"
+        identifier_field: slug
+        fields:
+          - label: "Slug"
+            name: "slug"
+            widget: "hidden"
+            default: "home"
+            i18n: duplicate
+          - label: Metadata
+            name: metadata
+            widget: object
+            summary: "{{fields.titulo}}"
             i18n: true
             fields:
               - {
@@ -138,219 +174,187 @@ collections:
                   i18n: true,
                 }
               - {
-                  label: "Link",
-                  name: "link",
+                  label: "Description",
+                  name: "description",
                   widget: "string",
                   i18n: true,
                 }
-  - name: "home"
-    i18n: true
-    create: true
-    format: "json"
-    folder: content/home
-    label: "Home"
-    identifier_field: slug
-    fields:
-      - label: "Slug"
-        name: "slug"
-        widget: "hidden"
-        default: "home"
-        i18n: duplicate
-      - label: Metadata
-        name: metadata
-        widget: object
-        summary: "{{fields.titulo}}"
-        i18n: true
-        fields:
-          - {
-              label: "Title",
-              name: "title",
-              widget: "string",
-              i18n: true,
-            }
-          - {
-              label: "Description",
-              name: "description",
-              widget: "string",
-              i18n: true,
-            }
-
-      - label: Hero
-        name: hero
-        widget: object
-        i18n: true
-        fields:
-          - label: "Text"
-            name: "text"
-            widget: "string"
-            i18n: true
-          - label: "Highlighted text"
-            name: "highlight"
-            widget: "string"
-            i18n: true
-          - label: "Background image"
-            name: "background"
-            widget: "image"
-            allow_multiple: false
-            i18n: true
-      - label: Sections
-        name: sections
-        i18n: true
-        widget: list
-        minimize_collapsed: true
-        collapsed: true
-        summary: "{{fields.type}}"
-        hint: "Depending on the type you select, it will show different sections and information. Only fill the fields specific to the section you want to display."
-        fields:
-          - label: Type
-            name: type
-            widget: select
-            options:
-              - { label: "Text", value: "TEXT" }
-              - {
-                  label: "Text, Image Right",
-                  value: "TEXT_IMAGE_RIGHT",
-                }
-              - {
-                  label: "Text, Image Left",
-                  value: "TEXT_IMAGE_LEFT",
-                }
-              - { label: "Numbers", value: "NUMBERS" }
-              - { label: "Carousel", value: "CAROUSEL" }
-              - { label: "Gallery", value: "GALLERY" }
-              - { label: "Partners", value: "PARTNERS" }
-              - { label: "YT Video", value: "YT_VIDEO" }
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            i18n: true
-            allow_multiple: false
-          - label: "Hate 4 love images"
-            name: "flipImages"
-            widget: "list"
-            minimize_collapsed: true
-            collapsed: true
+          - label: Hero
+            name: hero
+            widget: object
             i18n: true
             fields:
-              - label: "Front image"
-                name: "front"
+              - label: "Text"
+                name: "text"
+                widget: "string"
+                i18n: true
+              - label: "Highlighted text"
+                name: "highlight"
+                widget: "string"
+                i18n: true
+              - label: "Background image"
+                name: "background"
                 widget: "image"
                 allow_multiple: false
                 i18n: true
-              - label: "Back image"
-                name: "back"
+          - label: Sections
+            name: sections
+            i18n: true
+            widget: list
+            minimize_collapsed: true
+            collapsed: true
+            summary: "{{fields.type}}"
+            hint: "Depending on the type you select, it will show different sections and information. Only fill the fields specific to the section you want to display."
+            fields:
+              - label: Type
+                name: type
+                widget: select
+                options:
+                  - { label: "Text", value: "TEXT" }
+                  - {
+                      label: "Text, Image Right",
+                      value: "TEXT_IMAGE_RIGHT",
+                    }
+                  - {
+                      label: "Text, Image Left",
+                      value: "TEXT_IMAGE_LEFT",
+                    }
+                  - { label: "Numbers", value: "NUMBERS" }
+                  - { label: "Carousel", value: "CAROUSEL" }
+                  - { label: "Gallery", value: "GALLERY" }
+                  - { label: "Partners", value: "PARTNERS" }
+                  - { label: "YT Video", value: "YT_VIDEO" }
+              - label: "Image"
+                name: "image"
                 widget: "image"
-                allow_multiple: false
                 i18n: true
-          - label: "Title"
-            name: "title"
-            widget: "object"
-            summary: "{{fields.text}}"
-            i18n: true
-            fields:
-              - {
-                  label: "Text",
-                  name: "text",
-                  widget: "string",
-                  i18n: true,
-                }
-              - {
-                  label: "Highlighted text",
-                  name: "highlight",
-                  widget: "string",
-                  i18n: true,
-                }
-              - {
-                  label: "Icon",
-                  name: "icon",
-                  widget: "image",
-                  allow_multiple: false,
-                  i18n: true,
-                }
-          - label: "Body"
-            name: "body"
-            widget: "markdown"
-            i18n: true
-          - label: "Buttons"
-            name: "buttons"
-            widget: "list"
-            minimize_collapsed: true
-            collapsed: true
-            summary: "{{fields.title}}"
-            i18n: true
-            fields:
-              - {
-                  label: Title,
-                  name: title,
-                  widget: string,
-                  i18n: true,
-                }
-              - {
-                  label: Link,
-                  name: link,
-                  widget: string,
-                  i18n: true,
-                }
-              - {
-                  label: Secondary,
-                  name: secondary,
-                  widget: boolean,
-                  i18n: true,
-                }
-          - label: "Numbers"
-            name: "numbers"
-            widget: "list"
-            minimize_collapsed: true
-            collapsed: true
-            summary: "{{fields.text}}"
-            i18n: true
-            fields:
-              - {
-                  label: Number,
-                  name: Number,
-                  widget: string,
-                  i18n: true,
-                }
-              - {
-                  label: Text,
-                  name: text,
-                  widget: string,
-                  i18n: true,
-                }
-          - label: "Carousel"
-            name: "carousel"
-            widget: "list"
-            minimize_collapsed: true
-            collapsed: true
-            summary: "{{fields.highlight}}"
-            i18n: true
-            fields:
-              - {
-                  label: Text,
-                  name: text,
-                  widget: string,
-                  i18n: true,
-                }
-              - {
-                  label: Highlighted text,
-                  name: highlight,
-                  widget: string,
-                  i18n: true,
-                }
-              - {
-                  label: Text separator,
-                  name: separator,
-                  widget: string,
-                  default: "=",
-                  i18n: true,
-                }
-              - {
-                  label: Large text,
-                  name: largeText,
-                  widget: string,
-                  i18n: true,
-                }
-          - label: "Youtube link"
-            name: "ytLink"
-            widget: "string"
-            i18n: true
+                allow_multiple: false
+              - label: "Hate 4 love images"
+                name: "flipImages"
+                widget: "list"
+                minimize_collapsed: true
+                collapsed: true
+                i18n: true
+                fields:
+                  - label: "Front image"
+                    name: "front"
+                    widget: "image"
+                    allow_multiple: false
+                    i18n: true
+                  - label: "Back image"
+                    name: "back"
+                    widget: "image"
+                    allow_multiple: false
+                    i18n: true
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                summary: "{{fields.text}}"
+                i18n: true
+                fields:
+                  - {
+                      label: "Text",
+                      name: "text",
+                      widget: "string",
+                      i18n: true,
+                    }
+                  - {
+                      label: "Highlighted text",
+                      name: "highlight",
+                      widget: "string",
+                      i18n: true,
+                    }
+                  - {
+                      label: "Icon",
+                      name: "icon",
+                      widget: "image",
+                      allow_multiple: false,
+                      i18n: true,
+                    }
+              - label: "Body"
+                name: "body"
+                widget: "markdown"
+                i18n: true
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                minimize_collapsed: true
+                collapsed: true
+                summary: "{{fields.title}}"
+                i18n: true
+                fields:
+                  - {
+                      label: Title,
+                      name: title,
+                      widget: string,
+                      i18n: true,
+                    }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      i18n: true,
+                    }
+                  - {
+                      label: Secondary,
+                      name: secondary,
+                      widget: boolean,
+                      i18n: true,
+                    }
+              - label: "Numbers"
+                name: "numbers"
+                widget: "list"
+                minimize_collapsed: true
+                collapsed: true
+                summary: "{{fields.text}}"
+                i18n: true
+                fields:
+                  - {
+                      label: Number,
+                      name: Number,
+                      widget: string,
+                      i18n: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      i18n: true,
+                    }
+              - label: "Carousel"
+                name: "carousel"
+                widget: "list"
+                minimize_collapsed: true
+                collapsed: true
+                summary: "{{fields.highlight}}"
+                i18n: true
+                fields:
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      i18n: true,
+                    }
+                  - {
+                      label: Highlighted text,
+                      name: highlight,
+                      widget: string,
+                      i18n: true,
+                    }
+                  - {
+                      label: Text separator,
+                      name: separator,
+                      widget: string,
+                      default: "=",
+                      i18n: true,
+                    }
+                  - {
+                      label: Large text,
+                      name: largeText,
+                      widget: string,
+                      i18n: true,
+                    }
+              - label: "Youtube link"
+                name: "ytLink"
+                widget: "string"
+                i18n: true
