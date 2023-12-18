@@ -20,6 +20,7 @@ i18n:
 collections:
   - name: "layout"
     i18n: true
+    create: true
     format: "json"
     folder: content/layout
     label: "Layout"
@@ -144,6 +145,7 @@ collections:
                 }
   - name: "home"
     i18n: true
+    create: true
     format: "json"
     folder: content/home
     label: "Home"
