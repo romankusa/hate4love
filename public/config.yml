@@ -22,7 +22,6 @@ collections:
     i18n: true
     create: true
     format: "json"
-    folder: content/layout
     label: "Layout"
     identifier_field: slug
     fields:
@@ -145,9 +144,7 @@ collections:
                 }
   - name: "home"
     i18n: true
-    create: true
     format: "json"
-    folder: content/home
     label: "Home"
     identifier_field: slug
     fields:
