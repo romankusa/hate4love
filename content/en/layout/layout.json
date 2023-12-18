@@ -1,0 +1,14 @@
+{
+  "slug": "Layout",
+  "header": {
+    "logo": "/logo.png",
+    "button": {
+      "title": "asda",
+      "link": "asd"
+    }
+  },
+  "footer": {
+    "logo": "/logo.png",
+    "copyright": "asdasd"
+  }
+}
