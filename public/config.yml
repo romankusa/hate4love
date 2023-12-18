@@ -8,7 +8,7 @@ i18n:
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
   # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
   # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_folders
+  structure: multiple_files
 
   # Required - a list of locales to show in the editor UI
   locales: [en, es]
@@ -220,13 +220,28 @@ collections:
               - { label: "Gallery", value: "GALLERY" }
               - { label: "Partners", value: "PARTNERS" }
               - { label: "YT Video", value: "YT_VIDEO" }
-          - label: "Images"
-            name: "images"
+          - label: "Image"
+            name: "image"
             widget: "image"
             i18n: true
-            media_library:
-              config:
-                multiple: true
+            allow_multiple: false
+          - label: "Hate 4 love images"
+            name: "flipImages"
+            widget: "list"
+            minimize_collapsed: true
+            collapsed: true
+            i18n: true
+            fields:
+              - label: "Front image"
+                name: "front"
+                widget: "image"
+                allow_multiple: false
+                i18n: true
+              - label: "Back image"
+                name: "back"
+                widget: "image"
+                allow_multiple: false
+                i18n: true
           - label: "Title"
             name: "title"
             widget: "object"
