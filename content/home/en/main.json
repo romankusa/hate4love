@@ -1,5 +1,5 @@
 {
-  "slug": "Home Hate4Love",
+  "slug": "Main",
   "sections": [
     {
       "carousel": [
@@ -10,12 +10,12 @@
     }
   ],
   "metadata": {
-    "title": "sadsdf",
-    "description": "sdfsd"
+    "title": "asda",
+    "description": "sdasd"
   },
   "hero": {
-    "text": "adasd",
-    "highlight": "asda",
+    "text": "asdas",
+    "highlight": "dasdas",
     "background": "/logo.png"
   }
 }

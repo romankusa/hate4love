@@ -1,14 +1,14 @@
 {
-  "slug": "Layout Principal",
+  "slug": "Main",
   "header": {
     "logo": "/logo.png",
     "button": {
-      "title": "asdasd",
-      "link": "asdasd"
+      "title": "asdas",
+      "link": "dasd"
     }
   },
   "footer": {
     "logo": "/logo.png",
-    "copyright": "asdasd"
+    "copyright": "asdaasd"
   }
 }
