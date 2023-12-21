@@ -1,0 +1,14 @@
+{
+  "slug": "Layout Principal",
+  "header": {
+    "logo": "/logo.png",
+    "button": {
+      "title": "asdasd",
+      "link": "asdasd"
+    }
+  },
+  "footer": {
+    "logo": "/logo.png",
+    "copyright": "asdasd"
+  }
+}
