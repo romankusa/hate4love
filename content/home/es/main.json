@@ -26,6 +26,10 @@
   },
   "hero": {
     "text": "El Amor también florece en el desierto",
-    "highlight": "Amor"
+    "highlight": "Amor",
+    "background": {
+      "img": "/image-9.jpg",
+      "alt": "Mano simbolo corazón"
+    }
   }
 }
