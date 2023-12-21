@@ -5,8 +5,8 @@ media_folder: "public/images" # Media files will be stored in the repo under sta
 public_folder: "/" # The src attribute for uploaded media will begin with /images/uploads
 i18n:
   structure: multiple_folders
-  locales: [en, es]
-  default_locale: en
+  locales: [es, en]
+  default_locale: es
 
 collections:
   - name: "layout"
@@ -193,6 +193,10 @@ collections:
         summary: "{{fields.type}}"
         hint: "Depending on the type you select, it will show different sections and information. Only fill the fields specific to the section you want to display."
         fields:
+          - label: "id"
+            name: "id"
+            widget: "string"
+            i18n: duplicate
           - label: Type
             name: type
             widget: select
@@ -208,16 +212,18 @@ collections:
                 }
               - { label: "Numbers", value: "NUMBERS" }
               - { label: "Carousel", value: "CAROUSEL" }
-              - { label: "Gallery", value: "GALLERY" }
+              - { label: "hate4love Images", value: "HATE4LOVE" }
               - { label: "Partners", value: "PARTNERS" }
               - { label: "YT Video", value: "YT_VIDEO" }
           - label: "Image"
             name: "image"
+            required: false
             widget: "image"
             i18n: true
             allow_multiple: false
           - label: "Hate 4 love images"
             name: "flipImages"
+            required: false
             widget: "list"
             minimize_collapsed: true
             collapsed: true
@@ -235,6 +241,7 @@ collections:
                 i18n: true
           - label: "Title"
             name: "title"
+            required: false
             widget: "object"
             summary: "{{fields.text}}"
             i18n: true
@@ -244,12 +251,14 @@ collections:
                   name: "text",
                   widget: "string",
                   i18n: true,
+                  required: false,
                 }
               - {
                   label: "Highlighted text",
                   name: "highlight",
                   widget: "string",
                   i18n: true,
+                  required: false,
                 }
               - {
                   label: "Icon",
@@ -257,14 +266,17 @@ collections:
                   widget: "image",
                   allow_multiple: false,
                   i18n: true,
+                  required: false,
                 }
           - label: "Body"
             name: "body"
             widget: "markdown"
+            required: false
             i18n: true
           - label: "Buttons"
             name: "buttons"
             widget: "list"
+            required: false
             minimize_collapsed: true
             collapsed: true
             summary: "{{fields.title}}"
@@ -292,6 +304,7 @@ collections:
             name: "numbers"
             widget: "list"
             minimize_collapsed: true
+            required: false
             collapsed: true
             summary: "{{fields.text}}"
             i18n: true
@@ -299,7 +312,7 @@ collections:
               - {
                   label: Number,
                   name: Number,
-                  widget: string,
+                  widget: number,
                   i18n: true,
                 }
               - {
@@ -313,6 +326,7 @@ collections:
             widget: "list"
             minimize_collapsed: true
             collapsed: true
+            required: false
             summary: "{{fields.highlight}}"
             i18n: true
             fields:
@@ -345,3 +359,4 @@ collections:
             name: "ytLink"
             widget: "string"
             i18n: true
+            required: false
