@@ -1,9 +1,22 @@
+import { Button } from "@/components/atoms/Button/Button";
 import { Logo } from "./components/Logo/Logo";
+import { Nav } from "./components/Nav/Nav";
+
+import s from "./Header.module.scss";
+import { useAppStore } from "@/hooks/useAppStore";
 
 export const Header = () => {
+  const { data } = useAppStore.getState();
+
   return (
-    <div className="flex items-center">
-      <Logo />
+    <div className={s.header}>
+      <div className="flex-1">
+        <Logo />
+      </div>
+      <Nav />
+      <div className="flex-1 flex justify-end">
+        <Button>{data.layout.header.button.title}</Button>
+      </div>
     </div>
   );
 };

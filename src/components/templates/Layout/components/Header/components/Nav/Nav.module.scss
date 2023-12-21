@@ -1,0 +1,10 @@
+.navItem {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--text-d);
+  transition: color 150ms ease;
+
+  &:hover {
+    color: var(--hover-a);
+  }
+}

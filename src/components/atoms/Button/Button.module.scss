@@ -2,7 +2,13 @@
   font-weight: 600;
   font-size: 2.1rem;
   color: var(--text-d);
-  background: --tertiary-a;
+  background: var(--tertiary-a);
+  border-radius: 30px;
+  padding: 0 2rem;
+  height: 5.2rem;
+  display: inline-flex;
+  align-items: center;
+  transition: background 150ms ease;
 
   &:hover {
     background: var(--hover-a);

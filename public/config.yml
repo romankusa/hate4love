@@ -71,18 +71,33 @@ collections:
             i18n: true
             summary: "{{fields.title}}"
             fields:
-              - {
-                  label: "Title",
-                  name: "title",
-                  widget: "string",
-                  i18n: true,
-                }
-              - {
-                  label: "Link",
-                  name: "link",
-                  widget: "string",
-                  i18n: true,
-                }
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                i18n: true
+              - label: "Link"
+                name: "link"
+                widget: "string"
+                i18n: true
+              - label: Icon
+                name: icon
+                widget: object
+                required: false
+                i18n: true
+                summary: "{{fields.alt}}"
+                fields:
+                  - {
+                      label: "Imagen",
+                      name: "img",
+                      widget: "image",
+                      allow_multiple: false,
+                    }
+                  - {
+                      label: "Alt",
+                      name: "alt",
+                      widget: "string",
+                      i18n: true,
+                    }
       - label: Footer
         name: footer
         widget: object
@@ -358,24 +373,37 @@ collections:
             summary: "{{fields.title}}"
             i18n: true
             fields:
-              - {
-                  label: Title,
-                  name: title,
-                  widget: string,
-                  i18n: true,
-                }
-              - {
-                  label: Link,
-                  name: link,
-                  widget: string,
-                  i18n: true,
-                }
-              - {
-                  label: Secondary,
-                  name: secondary,
-                  widget: boolean,
-                  i18n: true,
-                }
+              - label: Title
+                name: title
+                widget: string
+                i18n: true
+              - label: Link
+                name: link
+                widget: string
+                i18n: true
+              - label: Secondary
+                name: secondary
+                widget: boolean
+                i18n: true
+              - label: Icon
+                name: icon
+                widget: object
+                required: false
+                i18n: true
+                summary: "{{fields.alt}}"
+                fields:
+                  - {
+                      label: "Imagen",
+                      name: "img",
+                      widget: "image",
+                      allow_multiple: false,
+                    }
+                  - {
+                      label: "Alt",
+                      name: "alt",
+                      widget: "string",
+                      i18n: true,
+                    }
           - label: "Numbers"
             name: "numbers"
             widget: "list"
