@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*:before,
+*:after {
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+
+  --background-a: rgba(46, 45, 45, 0.9);
+  --background-b: #eff2f4;
+
+  --text-a: #1b2326;
+  --text-b: #003e5e;
+  --text-c: #002234;
+  --text-d: #fafbfb;
+
+  --hover-a: rgba(255, 174, 143, 0.98);
+
+  --primary-a: #008ad1;
+
+  --secondary-a: #ffecd7;
+
+  --tertiary-a: #fc7b32;
+
+  --white: #fafbfb;
+}
+
+html {
+  font-family: var(--font-primary);
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: var(--white);
+  color: var(--text-c);
+}

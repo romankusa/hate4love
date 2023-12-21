@@ -1,3 +1,6 @@
+import { Home } from "@/components/templates/Home/Home";
+import { Layout } from "@/components/templates/Layout/Layout";
+import { useAppStore } from "@/hooks/useAppStore";
 import { getContent } from "@/utils/getContent";
 
 export const getStaticPaths = async () => {
@@ -23,7 +26,5 @@ export const getStaticProps = async (context: any) => {
 };
 
 export default function LocaleHome(props: any) {
-  const data = getContent(props.locale);
-
-  return <h1>{data?.home?.hero?.text}</h1>;
+  return <Home locale={props.locale} />;
 }

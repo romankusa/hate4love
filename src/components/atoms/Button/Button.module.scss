@@ -1,0 +1,15 @@
+.button {
+  font-weight: 600;
+  font-size: 2.1rem;
+  color: var(--text-d);
+  background: --tertiary-a;
+
+  &:hover {
+    background: var(--hover-a);
+  }
+
+  svg {
+    height: 14px;
+    width: auto;
+  }
+}

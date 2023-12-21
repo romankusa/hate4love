@@ -1,7 +1,6 @@
 {
   "slug": "Main",
   "header": {
-    "logo": "/logo.png",
     "links": [
       {
         "title": "Misión",
@@ -26,7 +25,6 @@
     }
   },
   "footer": {
-    "logo": "/logo.png",
     "copyright": "©️ HATE4LOVE"
   }
 }

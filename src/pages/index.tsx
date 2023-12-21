@@ -1,6 +1,6 @@
-// import { attributes } from "../../content/en/home.md";
+import { Home } from "@/components/templates/Home/Home";
+import { Locale } from "@/utils/constants";
 
-export default function Home() {
-  return <h1>aaas</h1>;
-  // return <div>{attributes.title}</div>;
+export default function HomePage() {
+  return <Home locale={Locale.ES} />;
 }

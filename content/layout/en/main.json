@@ -1,14 +1,12 @@
 {
   "slug": "Main",
   "header": {
-    "logo": "/logo.png",
     "button": {
       "title": "asdas",
       "link": "dasd"
     }
   },
   "footer": {
-    "logo": "/logo.png",
     "copyright": "asdaasd"
   }
 }

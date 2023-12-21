@@ -26,7 +26,6 @@
   },
   "hero": {
     "text": "El Amor también florece en el desierto",
-    "highlight": "Amor",
-    "background": "/image-9.jpg"
+    "highlight": "Amor"
   }
 }
