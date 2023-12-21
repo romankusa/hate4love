@@ -1,3 +1,32 @@
 {
-  "slug": "Main"
+  "slug": "Main",
+  "header": {
+    "logo": "/logo.png",
+    "links": [
+      {
+        "title": "Misión",
+        "link": "/#mision"
+      },
+      {
+        "title": "Contexto",
+        "link": "/#contexto"
+      },
+      {
+        "title": "Comparte",
+        "link": "/#comparte"
+      },
+      {
+        "title": "Donación",
+        "link": "/#donacion"
+      }
+    ],
+    "button": {
+      "title": "Quiero donar",
+      "link": "TBD"
+    }
+  },
+  "footer": {
+    "logo": "/logo.png",
+    "copyright": "©️ HATE4LOVE"
+  }
 }
