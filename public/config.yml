@@ -9,7 +9,7 @@ i18n:
   default_locale: en
 
 collections:
-  - name: "layout_data"
+  - name: "layout"
     label: "Layout"
     i18n: true
     create: true
@@ -20,7 +20,7 @@ collections:
       - label: "Slug"
         name: "slug"
         widget: "hidden"
-        default: "Layout"
+        default: "Layout Principal"
         i18n: duplicate
       - label: Header
         name: header
@@ -136,6 +136,7 @@ collections:
                 }
   - name: "home"
     i18n: true
+    create: true
     format: "json"
     folder: content/home
     label: "Home"
@@ -144,7 +145,7 @@ collections:
       - label: "Slug"
         name: "slug"
         widget: "hidden"
-        default: "home"
+        default: "Home Hate4Love"
         i18n: duplicate
       - label: Metadata
         name: metadata
