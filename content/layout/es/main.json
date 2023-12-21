@@ -29,7 +29,8 @@
     },
     "logo": {
       "img": "/logo.png",
-      "alt": "Logo"
+      "alt": "Logo",
+      "mobileImg": "/group-96418-1-.png"
     }
   },
   "footer": {
