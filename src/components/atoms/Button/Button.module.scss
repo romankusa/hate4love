@@ -9,12 +9,13 @@
   display: inline-flex;
   align-items: center;
   transition: background 150ms ease;
+  gap: 0.7rem;
 
   &:hover {
     background: var(--hover-a);
   }
 
-  svg {
+  img {
     height: 14px;
     width: auto;
   }

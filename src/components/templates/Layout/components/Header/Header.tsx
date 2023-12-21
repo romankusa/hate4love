@@ -15,7 +15,13 @@ export const Header = () => {
       </div>
       <Nav />
       <div className="flex-1 flex justify-end">
-        <Button>{data.layout.header.button.title}</Button>
+        <Button>
+          <img
+            src={data.layout.header.button.icon?.img}
+            alt={data.layout.header.button.icon?.alt}
+          />
+          {data.layout.header.button.title}
+        </Button>
       </div>
     </div>
   );

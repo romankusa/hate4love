@@ -7,7 +7,7 @@ export interface Layout {
 export interface Header {
   links: Link[];
   button: Button;
-  logo: Logo;
+  logo: Image;
 }
 
 export interface Link {
@@ -18,9 +18,10 @@ export interface Link {
 export interface Button {
   title: string;
   link: string;
+  icon: Image;
 }
 
-export interface Logo {
+export interface Image {
   img: string;
   alt: string;
 }
