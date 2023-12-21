@@ -22,6 +22,10 @@
     "button": {
       "title": "Quiero donar",
       "link": "TBD"
+    },
+    "logo": {
+      "img": "/logo.png",
+      "alt": "Logo"
     }
   },
   "footer": {
