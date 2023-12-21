@@ -2,11 +2,31 @@
   "slug": "Main",
   "sections": [
     {
-      "carousel": [
+      "id": "numbers",
+      "type": "NUMBERS",
+      "numbers": [
         {
-          "separator": "="
+          "Number": 1000,
+          "text": "Actos de violencia"
+        },
+        {
+          "Number": 1200,
+          "text": "Posts en Redes sociales"
+        },
+        {
+          "Number": 1342,
+          "text": "Manifestaciones"
         }
       ]
     }
-  ]
+  ],
+  "metadata": {
+    "title": "hate4love",
+    "description": "hate4love"
+  },
+  "hero": {
+    "text": "El Amor también florece en el desierto",
+    "highlight": "Amor",
+    "background": "/image-9.jpg"
+  }
 }
