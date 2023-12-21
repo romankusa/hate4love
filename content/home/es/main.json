@@ -1,6 +1,25 @@
 {
   "slug": "Main",
-  "sections": [],
+  "sections": [
+    {
+      "id": "numbers",
+      "type": "NUMBERS",
+      "numbers": [
+        {
+          "Number": 1000,
+          "text": "Actos de violencia"
+        },
+        {
+          "Number": 1200,
+          "text": "Posts en Redes sociales"
+        },
+        {
+          "Number": 1342,
+          "text": "Manifestaciones"
+        }
+      ]
+    }
+  ],
   "metadata": {
     "title": "hate4love",
     "description": "hate4love"
