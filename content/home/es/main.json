@@ -29,7 +29,8 @@
     "highlight": "Amor",
     "background": {
       "img": "/image-9.jpg",
-      "alt": "Mano simbolo corazón"
+      "alt": "Mano simbolo corazón",
+      "mobileImg": "/image-9-1-.jpg"
     }
   }
 }
