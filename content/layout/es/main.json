@@ -21,7 +21,11 @@
     ],
     "button": {
       "title": "Quiero donar",
-      "link": "TBD"
+      "link": "TBD",
+      "icon": {
+        "img": "/filled-icons.png",
+        "alt": "Sparks"
+      }
     },
     "logo": {
       "img": "/logo.png",
