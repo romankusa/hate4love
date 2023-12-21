@@ -1,0 +1,21 @@
+{
+  "slug": "Main",
+  "sections": [
+    {
+      "carousel": [
+        {
+          "separator": "="
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "asda",
+    "description": "sdasd"
+  },
+  "hero": {
+    "text": "asdas",
+    "highlight": "dasdas",
+    "background": "/logo.png"
+  }
+}
