@@ -7,7 +7,7 @@ export interface Layout {
 export interface Header {
   links: Link[];
   button: Button;
-  logo: Image;
+  logo: { mobileImg: string } & Image;
 }
 
 export interface Link {

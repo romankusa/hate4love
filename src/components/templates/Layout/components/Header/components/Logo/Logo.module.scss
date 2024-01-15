@@ -1,4 +1,10 @@
 .logo {
   height: 43px;
   width: auto;
+  object-fit: contain;
+  min-width: 10rem;
+
+  @screen lg {
+    min-width: 20rem;
+  }
 }

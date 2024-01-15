@@ -1,0 +1,27 @@
+.wave {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 140px;
+}
+
+.wave .shapeFill {
+  fill: var(--secondary-a);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .wave svg {
+    width: calc(195% + 1.3px);
+    height: 144px;
+  }
+}

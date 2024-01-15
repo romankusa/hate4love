@@ -40,6 +40,12 @@ collections:
                   allow_multiple: false,
                 }
               - {
+                  label: "Mobile image",
+                  name: "mobileImg",
+                  widget: "image",
+                  allow_multiple: false,
+                }
+              - {
                   label: "Alt",
                   name: "alt",
                   widget: "string",
@@ -196,13 +202,39 @@ collections:
         widget: object
         i18n: true
         fields:
-          - label: "Text"
-            name: "text"
+          - label: Logo
+            name: logo
+            widget: object
+            i18n: true
+            summary: "{{fields.alt}}"
+            fields:
+              - {
+                  label: "Imagen",
+                  name: "img",
+                  widget: "image",
+                  allow_multiple: false,
+                }
+              - {
+                  label: "Alt",
+                  name: "alt",
+                  widget: "string",
+                  i18n: true,
+                }
+          # - label: "Text"
+          #   name: "text"
+          #   widget: "string"
+          #   i18n: true
+          # - label: "Highlighted text"
+          #   name: "highlight"
+          #   widget: "string"
+          #   i18n: true
+          - label: "Title"
+            name: "title"
             widget: "string"
             i18n: true
-          - label: "Highlighted text"
-            name: "highlight"
-            widget: "string"
+          - label: "Text"
+            name: "text"
+            widget: "text"
             i18n: true
           - label: Background image
             name: background
@@ -213,6 +245,12 @@ collections:
               - {
                   label: "Imagen",
                   name: "img",
+                  widget: "image",
+                  allow_multiple: false,
+                }
+              - {
+                  label: "Imagen mobile",
+                  name: "mobileImg",
                   widget: "image",
                   allow_multiple: false,
                 }
@@ -459,6 +497,36 @@ collections:
                   widget: string,
                   i18n: true,
                 }
+              - {
+                  label: Copyright,
+                  name: copyright,
+                  widget: string,
+                  i18n: true,
+                }
+              - label: Background image
+                name: background
+                widget: object
+                i18n: true
+                summary: "{{fields.alt}}"
+                fields:
+                  - {
+                      label: "Imagen",
+                      name: "img",
+                      widget: "image",
+                      allow_multiple: false,
+                    }
+                  - {
+                      label: "Imagen mobile",
+                      name: "mobileImg",
+                      widget: "image",
+                      allow_multiple: false,
+                    }
+                  - {
+                      label: "Alt",
+                      name: "alt",
+                      widget: "string",
+                      i18n: true,
+                    }
           - label: "Youtube link"
             name: "ytLink"
             widget: "string"

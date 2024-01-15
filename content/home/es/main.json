@@ -24,13 +24,5 @@
     "title": "hate4love",
     "description": "hate4love"
   },
-  "hero": {
-    "text": "El Amor también florece en el desierto",
-    "highlight": "Amor",
-    "background": {
-      "img": "/image-9.jpg",
-      "alt": "Mano simbolo corazón",
-      "mobileImg": "/image-9-1-.jpg"
-    }
-  }
+  "hero": {}
 }

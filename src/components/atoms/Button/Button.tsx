@@ -6,8 +6,13 @@ import {
 
 import s from "./Button.module.scss";
 
-export const Button: FC<AbstractButtonProps> = ({ children }) => {
+export const Button: FC<AbstractButtonProps> = ({
+  children,
+  ...props
+}) => {
   return (
-    <AbstractButton className={s.button}>{children}</AbstractButton>
+    <AbstractButton className={s.button} {...props}>
+      {children}
+    </AbstractButton>
   );
 };

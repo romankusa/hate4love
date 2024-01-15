@@ -1,0 +1,38 @@
+.title {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 70rem;
+
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 105%;
+  letter-spacing: -1.92px;
+  text-align: center;
+
+  @screen lg {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: -2.88px;
+    top: 35%;
+  }
+}
+
+.brush {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 115%;
+  height: 112px;
+  z-index: -1;
+  object-fit: contain;
+}

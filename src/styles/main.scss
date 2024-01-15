@@ -33,7 +33,11 @@
 
   --white: #fafbfb;
 
-  --site-padding: 3.2rem;
+  --site-padding: 1.6rem;
+
+  @screen lg {
+    --site-padding: 3.2rem;
+  }
 }
 
 html {
