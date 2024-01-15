@@ -24,5 +24,17 @@
     "title": "hate4love",
     "description": "hate4love"
   },
-  "hero": {}
+  "hero": {
+    "logo": {
+      "img": "/group-96418-1-.png",
+      "alt": "Logo"
+    },
+    "title": "Ayúdanos a trasformar el odio en amor",
+    "text": "Si has detectado un acto de odio hacia Israel y los judíos en la calle o en las redes denúncialo con el #HATE4LOVE y haz que el odio se convierta en un acto de amor hacia la naturaleza",
+    "background": {
+      "img": "/image-9.jpg",
+      "mobileImg": "/image-9-1-.jpg",
+      "alt": "Forma de corazón con dedos"
+    }
+  }
 }
