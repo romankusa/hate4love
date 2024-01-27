@@ -70,6 +70,28 @@
             "img": "/matt-artz-ntrdndddyk8-unsplash.jpg",
             "mobileImg": "/matt-artz-ntrdndddyk8-unsplash.jpg"
           }
+        },
+        {
+          "separator": "=",
+          "text": "1 manifestación antisemita",
+          "highlight": "1 manifestación",
+          "largeText": "1 Arbol",
+          "copyright": "Steven Kamenar",
+          "background": {
+            "img": "/steven-kamenar-mmjx78v7xs8-unsplash.jpg",
+            "alt": "Arboles"
+          }
+        },
+        {
+          "separator": "=",
+          "text": "1 publicación antisemita",
+          "highlight": "1 publicación",
+          "largeText": "1 Árbol",
+          "copyright": "Andrew Coelho",
+          "background": {
+            "img": "/andrew-coelho-al7sa1asvdq-unsplash-1-.jpg",
+            "alt": "Arboles"
+          }
         }
       ],
       "id": "carousel",
