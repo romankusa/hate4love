@@ -53,7 +53,7 @@
       ]
     },
     {
-      "id": "test",
+      "id": "youtube",
       "type": "YT_VIDEO",
       "ytLink": "https://www.youtube.com/embed/tgbNymZ7vqY"
     }
