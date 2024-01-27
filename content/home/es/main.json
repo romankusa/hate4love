@@ -17,6 +17,39 @@
           "number": 1342,
           "text": "Manifestaciones"
         }
+      ],
+      "title": {
+        "icon": {
+          "img": "/arrow.png",
+          "alt": "test"
+        }
+      }
+    },
+    {
+      "id": "mision",
+      "type": "TEXT",
+      "title": {
+        "text": "3542",
+        "icon": {
+          "img": "/vector-3.png",
+          "alt": "Arbol"
+        }
+      },
+      "body": "**Nuestra Misión**\n\nNos hemos propuesto un desafío único y significativo: por cada acto de odio contra Israel y su pueblo, plantaremos árboles en el desierto del Negev.\n\nUn símbolo de vida que florecerá en medio de un arenal, recordándonos que incluso en los lugares más áridos, el amor puede germinar. Todo ello, gracias a la colaboración de la organización israelí Keren Kayemet LeIsrael.",
+      "image": {
+        "img": "/information.png",
+        "alt": "Arboles"
+      },
+      "buttons": [
+        {
+          "title": "Conocer más ",
+          "secondary": true,
+          "link": "/tbd",
+          "icon": {
+            "img": "/arrow.png",
+            "alt": "Flecha"
+          }
+        }
       ]
     }
   ],
