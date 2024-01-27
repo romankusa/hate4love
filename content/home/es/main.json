@@ -51,6 +51,10 @@
           }
         }
       ]
+    },
+    {
+      "id": "test",
+      "type": "YT_VIDEO"
     }
   ],
   "metadata": {
