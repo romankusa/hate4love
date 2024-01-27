@@ -2,13 +2,12 @@ import { useAppStore } from "@/hooks/useAppStore";
 import s from "./Hero.module.scss";
 import { useDimensions } from "@/hooks/useDimensions";
 import { Wave } from "./components/Wave/Wave";
-import { Title } from "./components/Title/Title";
+import { Logo } from "./components/Logo/Logo";
+import { Texts } from "./components/Texts/Texts";
 
 export const Hero = () => {
   const { data } = useAppStore.getState();
   const { isDesktop } = useDimensions();
-
-  console.log({ data });
 
   return (
     <div className="relative">
@@ -21,8 +20,12 @@ export const Hero = () => {
               : data.home.hero.background.mobileImg
           })`,
         }}
-      ></div>
-      <Title />
+      >
+        <div className={s.heroContent}>
+          <Logo />
+          <Texts />
+        </div>
+      </div>
       <Wave />
     </div>
   );

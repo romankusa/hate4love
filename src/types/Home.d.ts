@@ -12,7 +12,7 @@ export interface Section {
 }
 
 export interface Number {
-  Number: number;
+  number: number;
   text: string;
 }
 
@@ -22,12 +22,13 @@ export interface Metadata {
 }
 
 export interface Hero {
+  title: string;
   text: string;
-  highlight: string;
-  background: { mobileImg: string } & Background;
+  background: { mobileImg: string } & Image;
+  logo: Image;
 }
 
-export interface Background {
+export interface Image {
   img: string;
   alt: string;
 }

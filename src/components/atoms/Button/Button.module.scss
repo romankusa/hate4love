@@ -1,14 +1,14 @@
 .button {
   font-weight: 600;
   font-size: 1.8rem;
-  color: var(--text-d);
-  background: var(--tertiary-a);
+  color: var(--neutral-50);
+  background: var(--secondary-500);
   border-radius: 30px;
   padding: 0 2rem;
   height: 4.5rem;
   display: inline-flex;
   align-items: center;
-  transition: background 150ms ease;
+  transition: filter 150ms ease;
   gap: 0.7rem;
   white-space: nowrap;
   flex-shrink: 0;
@@ -19,7 +19,7 @@
   }
 
   &:hover {
-    background: var(--hover-a);
+    filter: brightness(1.1);
   }
 
   img {

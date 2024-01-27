@@ -1,0 +1,11 @@
+.logo {
+  width: 260px;
+  height: auto;
+  object-fit: contain;
+  // margin: 0 auto;
+
+  @screen lg {
+    width: 423px;
+    height: 225px;
+  }
+}

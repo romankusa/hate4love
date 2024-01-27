@@ -6,15 +6,15 @@
       "type": "NUMBERS",
       "numbers": [
         {
-          "Number": 1000,
+          "number": 1000,
           "text": "Actos de violencia"
         },
         {
-          "Number": 1200,
+          "number": 1200,
           "text": "Posts en Redes sociales"
         },
         {
-          "Number": 1342,
+          "number": 1342,
           "text": "Manifestaciones"
         }
       ]

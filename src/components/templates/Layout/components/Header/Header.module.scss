@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   height: 10rem;
-  background-color: var(--background-a);
+  background-color: rgba(46, 45, 45, 0.9);
+  backdrop-filter: blur(5px);
   padding: 0 var(--site-padding);
 
   @screen lg {
-    height: 11rem;
+    height: 10rem;
   }
 }
