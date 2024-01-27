@@ -56,6 +56,24 @@
       "id": "youtube",
       "type": "YT_VIDEO",
       "ytLink": "https://www.youtube.com/embed/tgbNymZ7vqY"
+    },
+    {
+      "carousel": [
+        {
+          "separator": "=",
+          "text": "1 acto de violencia antisemita",
+          "highlight": "1 acto de violencia",
+          "largeText": "1 Árbol",
+          "copyright": "Matt Artz",
+          "background": {
+            "alt": "Arboles",
+            "img": "/matt-artz-ntrdndddyk8-unsplash.jpg",
+            "mobileImg": "/matt-artz-ntrdndddyk8-unsplash.jpg"
+          }
+        }
+      ],
+      "id": "carousel",
+      "type": "CAROUSEL"
     }
   ],
   "metadata": {
