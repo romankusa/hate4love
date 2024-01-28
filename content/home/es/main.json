@@ -212,6 +212,19 @@
           "img": "/vector.png"
         }
       }
+    },
+    {
+      "title": {
+        "text": "Organización que nos apoya:"
+      },
+      "id": "partners",
+      "type": "PARTNERS",
+      "partners": [
+        {
+          "img": "/logo-mjp-1-1.png",
+          "alt": "Madres judias por la paz"
+        }
+      ]
     }
   ],
   "metadata": {
