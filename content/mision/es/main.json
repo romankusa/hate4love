@@ -1,0 +1,30 @@
+{
+  "slug": "Main",
+  "hero": {
+    "background": {
+      "img": "/עצים-בנחל-נוקד_בוני-שיינמן-עובדת-קקל_056753-1.jpg",
+      "mobileImg": "/עצים-בנחל-נוקד_בוני-שיינמן-עובדת-קקל_056753-1-1-.jpg",
+      "alt": "Arboles"
+    },
+    "title": "Nos unimos para sembrar amor",
+    "highlight": "sembrar amor"
+  },
+  "metadata": {
+    "title": "Misión",
+    "description": "Misión"
+  },
+  "content": {
+    "title": "Nuestra Misión",
+    "body": "En un mundo donde el antisemitismo se multiplica, los que creemos en la libertad, la igualdad, la democracia, la justicia social, la participación ciudadana y el respeto al que es diferente, nos levantamos con un propósito claro: convertir la oscuridad en luz, el odio en amor. \n\nCada árbol plantado simboliza una pequeña victoria sobre el odio. Es un acto tangible de amor hacia la naturaleza y hacia la humanidad. Por eso, os invitamos a uniros. Si encontráis algún post de odio anti-judío, si tropezáis con un comentario cargado de prejuicios antisemitas, no os quedéis en silencio. Sed junto a nosotros la voz que contrarresta el odio.\n\nCreemos en el poder transformador del amor, en su capacidad para sanar las heridas más profundas y unir a las personas más allá de las diferencias. Únete a nosotros si crees que el amor vencerá frente al odio. Sé parte de la revolución del amor.",
+    "buttons": [
+      {
+        "title": "Quiero donar",
+        "link": "/tdb",
+        "icon": {
+          "img": "/sparks.png",
+          "alt": "Brillos"
+        }
+      }
+    ]
+  }
+}
