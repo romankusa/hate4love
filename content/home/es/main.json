@@ -96,6 +96,30 @@
       ],
       "id": "carousel",
       "type": "CAROUSEL"
+    },
+    {
+      "id": "hate4love",
+      "type": "HATE4LOVE",
+      "flipImages": [
+        {
+          "front": {
+            "img": "/image-3.png",
+            "mobileImg": "/image-50.png",
+            "alt": "Protesta contra Israel"
+          },
+          "back": {
+            "img": "/image-60.png",
+            "mobileImg": "/image-26.png",
+            "alt": "Arboles"
+          }
+        }
+      ],
+      "title": {
+        "text": "Convierte el odio en amor",
+        "icon": {
+          "img": "/vector.png"
+        }
+      }
     }
   ],
   "metadata": {
