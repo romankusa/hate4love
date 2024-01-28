@@ -5,7 +5,8 @@
       "title": "Donate now",
       "link": "TDB",
       "icon": {
-        "alt": "Sparks"
+        "img": "/sparks.png",
+        "alt": "Brillos"
       }
     },
     "logo": {

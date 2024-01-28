@@ -99,6 +99,7 @@ collections:
                       name: "img",
                       widget: "image",
                       allow_multiple: false,
+                      i18n: duplicate,
                     }
                   - {
                       label: "Alt",
@@ -163,6 +164,7 @@ collections:
                   name: "img",
                   widget: "image",
                   allow_multiple: false,
+                  i18n: duplicate,
                 }
               - {
                   label: "Alt",
@@ -197,12 +199,14 @@ collections:
                   name: "img",
                   widget: "image",
                   allow_multiple: false,
+                  i18n: duplicate,
                 }
               - {
                   label: "Imagen mobile",
                   name: "mobileImg",
                   widget: "image",
                   allow_multiple: false,
+                  i18n: duplicate,
                 }
               - {
                   label: "Alt",
@@ -282,7 +286,7 @@ collections:
                       label: "Imagen",
                       name: "img",
                       widget: "image",
-                      i18n: true,
+                      i18n: duplicate,
                       allow_multiple: false,
                     }
                   - {
@@ -291,6 +295,7 @@ collections:
                       widget: "image",
                       allow_multiple: false,
                       required: false,
+                      i18n: duplicate,
                     }
                   - {
                       label: "Alt",
@@ -308,7 +313,7 @@ collections:
                       label: "Imagen",
                       name: "img",
                       widget: "image",
-                      i18n: true,
+                      i18n: duplicate,
                       allow_multiple: false,
                     }
                   - {
@@ -317,6 +322,7 @@ collections:
                       widget: "image",
                       allow_multiple: false,
                       required: false,
+                      i18n: duplicate,
                     }
                   - {
                       label: "Alt",
@@ -402,6 +408,7 @@ collections:
                       name: "img",
                       widget: "image",
                       allow_multiple: false,
+                      i18n: duplicate,
                     }
                   - {
                       label: "Alt",
@@ -481,6 +488,7 @@ collections:
                       name: "img",
                       widget: "image",
                       allow_multiple: false,
+                      i18n: duplicate,
                     }
                   - {
                       label: "Imagen mobile",
@@ -488,6 +496,7 @@ collections:
                       widget: "image",
                       allow_multiple: false,
                       required: false,
+                      i18n: duplicate,
                     }
                   - {
                       label: "Alt",
@@ -500,14 +509,21 @@ collections:
             widget: list
             minimize_collapsed: true
             collapsed: true
+            i18n: true
             fields:
               - {
                   label: "Imagen",
                   name: "img",
                   widget: "image",
                   allow_multiple: false,
+                  i18n: duplicate,
                 }
-              - { label: "Alt", name: "alt", widget: "string" }
+              - {
+                  label: "Alt",
+                  name: "alt",
+                  widget: "string",
+                  i18n: duplicate,
+                }
           - label: "Youtube link"
             name: "ytLink"
             widget: "string"
@@ -568,12 +584,14 @@ collections:
                   name: "img",
                   widget: "image",
                   allow_multiple: false,
+                  i18n: duplicate,
                 }
               - {
                   label: "Imagen mobile",
                   name: "mobileImg",
                   widget: "image",
                   allow_multiple: false,
+                  i18n: duplicate,
                 }
               - {
                   label: "Alt",
@@ -629,6 +647,7 @@ collections:
                       name: "img",
                       widget: "image",
                       allow_multiple: false,
+                      i18n: duplicate,
                     }
                   - {
                       label: "Alt",
