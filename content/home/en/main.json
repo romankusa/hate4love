@@ -18,6 +18,28 @@
           "text": "Manifestaciones"
         }
       ]
+    },
+    {
+      "id": "mission",
+      "type": "TEXT",
+      "title": {
+        "text": "3542",
+        "icon": {
+          "img": "/vector-3.png",
+          "alt": "Tree"
+        }
+      },
+      "body": "##### Our mission\n\nWe have set ourselves a unique and meaningful challenge: for every act of hatred against Israel and its people, we will plant trees in the Negev Desert.\n\nA symbol of life that will flourish in the midst of a desert, reminding us that even in the most arid places, love can sprout. All of this, thanks to the collaboration of the Israeli organization Keren Kayemet LeIsrael.",
+      "buttons": [
+        {
+          "title": "See more",
+          "link": "mission",
+          "icon": {
+            "img": "/arrow.png",
+            "alt": "Chevron right"
+          }
+        }
+      ]
     }
   ],
   "metadata": {
