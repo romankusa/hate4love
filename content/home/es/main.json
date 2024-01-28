@@ -53,7 +53,7 @@
       ]
     },
     {
-      "id": "youtube",
+      "id": "contexto",
       "type": "YT_VIDEO",
       "ytLink": "https://www.youtube.com/embed/tgbNymZ7vqY"
     },
@@ -96,6 +96,30 @@
       ],
       "id": "carousel",
       "type": "CAROUSEL"
+    },
+    {
+      "id": "ayuda",
+      "type": "TEXT",
+      "title": {
+        "text": "#hate4love",
+        "highlight": "4love",
+        "icon": {
+          "img": "",
+          "alt": ""
+        }
+      },
+      "buttons": [
+        {
+          "title": "Quiero donar",
+          "link": "/tdb",
+          "icon": {
+            "img": "/sparks.png",
+            "alt": "Brillos"
+          },
+          "secondary": false
+        }
+      ],
+      "body": "##### ¿Cómo puedes ayudarnos?\n\nSimplemente sumando el hashtag #hate4love en aquellos comentarios de odio y compartiéndolo, dejarás una señal clara de que el amor es más fuerte, para que podamos seguir construyendo puentes en lugar de muros."
     },
     {
       "id": "hate4love",
@@ -188,29 +212,6 @@
           "img": "/vector.png"
         }
       }
-    },
-    {
-      "id": "ayuda",
-      "type": "TEXT",
-      "title": {
-        "text": "#hate4love",
-        "highlight": "4love",
-        "icon": {
-          "img": "",
-          "alt": ""
-        }
-      },
-      "buttons": [
-        {
-          "title": "Quiero donar",
-          "link": "/tdb",
-          "icon": {
-            "img": "/sparks.png",
-            "alt": "Brillos"
-          },
-          "secondary": false
-        }
-      ]
     }
   ],
   "metadata": {
