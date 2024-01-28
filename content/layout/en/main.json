@@ -2,11 +2,35 @@
   "slug": "Main",
   "header": {
     "button": {
-      "title": "asdas",
-      "link": "dasd"
-    }
+      "title": "Donate now",
+      "link": "TDB",
+      "icon": {
+        "alt": "Sparks"
+      }
+    },
+    "logo": {
+      "alt": "Logo"
+    },
+    "links": [
+      {
+        "title": "Mission",
+        "link": "/mision"
+      },
+      {
+        "title": "Current situation",
+        "link": "/#contexto"
+      },
+      {
+        "title": "How to help us?",
+        "link": "/#ayuda"
+      },
+      {
+        "title": "Who supports us?",
+        "link": "/#partners"
+      }
+    ]
   },
   "footer": {
-    "copyright": "asdaasd"
+    "copyright": "©️ HATE4LOVE"
   }
 }
