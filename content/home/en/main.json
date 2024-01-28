@@ -40,7 +40,11 @@
           },
           "secondary": true
         }
-      ]
+      ],
+      "image": {
+        "img": "/information.png",
+        "alt": "Trees"
+      }
     }
   ],
   "metadata": {
