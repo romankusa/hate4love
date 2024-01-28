@@ -48,12 +48,15 @@
   },
   "hero": {
     "logo": {
+      "img": "/group-96418-1-.png",
       "alt": "Logo"
     },
     "title": "Help us transform hatred into love",
     "text": "If you have witnessed an act of hatred towards Israel and the Jewish people on the street or online, report it using #HATE4LOVE and turn hatred into an act of love towards nature.",
     "background": {
-      "alt": "Fingers heart shape"
+      "alt": "Fingers heart shape",
+      "img": "/image-9.jpg",
+      "mobileImg": "/image-9-1-.jpg"
     }
   }
 }
