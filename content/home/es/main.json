@@ -112,6 +112,74 @@
             "mobileImg": "/image-26.png",
             "alt": "Arboles"
           }
+        },
+        {
+          "front": {
+            "img": "/image-71.png",
+            "mobileImg": "/image-72.png",
+            "alt": "Victimas de hamas"
+          },
+          "back": {
+            "img": "/image-20.png",
+            "mobileImg": "/image-27.png",
+            "alt": "Arboles"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-73.png",
+            "alt": "Desaparecidos"
+          },
+          "back": {
+            "img": "/image-21.png",
+            "alt": "Arboles"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-474.png",
+            "mobileImg": "/image-74.png",
+            "alt": "Victima de hamas"
+          },
+          "back": {
+            "img": "/image-23.png",
+            "mobileImg": "/image-29.png",
+            "alt": "Arboles"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-75.png",
+            "mobileImg": "/image-76.png",
+            "alt": "Protesta contra Israel"
+          },
+          "back": {
+            "img": "/image-22.png",
+            "mobileImg": "/image-28.png",
+            "alt": "Arboles"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-77.png",
+            "mobileImg": "/image-78.png",
+            "alt": "Victimas de Hamas"
+          },
+          "back": {
+            "img": "/image-24.png",
+            "mobileImg": "/image-30.png",
+            "alt": "Arboles"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-79.png",
+            "alt": "Terrorismo"
+          },
+          "back": {
+            "img": "/image-25.png",
+            "alt": "Arboles"
+          }
         }
       ],
       "title": {
