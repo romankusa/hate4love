@@ -37,7 +37,8 @@
           "icon": {
             "img": "/arrow.png",
             "alt": "Chevron right"
-          }
+          },
+          "secondary": true
         }
       ]
     }
