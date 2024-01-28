@@ -5,13 +5,24 @@ import {
 } from "../AbstractButton/AbstractButton";
 
 import s from "./Button.module.scss";
+import clsx from "clsx";
 
-export const Button: FC<AbstractButtonProps> = ({
+interface ButtonProps extends AbstractButtonProps {
+  secondary?: boolean;
+}
+
+export const Button: FC<ButtonProps> = ({
   children,
+  secondary,
   ...props
 }) => {
   return (
-    <AbstractButton className={s.button} {...props}>
+    <AbstractButton
+      className={clsx(s.button, {
+        [s.secondary]: secondary,
+      })}
+      {...props}
+    >
       {children}
     </AbstractButton>
   );

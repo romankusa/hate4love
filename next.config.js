@@ -19,6 +19,15 @@ const nextConfig = {
       loader: "frontmatter-markdown-loader",
       options: { mode: ["react-component"] },
     });
+
+    cfg.module.rules.push({
+      test: /\.svg$/i,
+      loader: "@svgr/webpack",
+      options: {
+        dimensions: false,
+      },
+    });
+
     return cfg;
   },
   images: {

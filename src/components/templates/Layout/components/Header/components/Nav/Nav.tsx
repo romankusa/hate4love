@@ -7,7 +7,7 @@ export const Nav = () => {
   const { data } = useAppStore.getState();
 
   return (
-    <ul className="flex items-center gap-28">
+    <ul className="flex items-center gap-10 xl:gap-28">
       {data.layout.header.links.map((link) => (
         <li key={link.title} className={s.navItem}>
           <Link href={link.link}>{link.title}</Link>

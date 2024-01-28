@@ -1,0 +1,27 @@
+.arrow {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 31px;
+    height: 34px;
+    margin: 0 auto;
+  }
+}
+
+.left {
+  left: var(--site-padding);
+}
+
+.right {
+  right: var(--site-padding);
+}

@@ -1,9 +1,7 @@
-import { useAppStore } from "@/hooks/useAppStore";
 import { Section } from "@/types/Home";
 import { FC } from "react";
 
 import s from "./Numbers.module.scss";
-import { formatNumber } from "@/utils/formatNumber";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import { Number } from "./components/Number";
 

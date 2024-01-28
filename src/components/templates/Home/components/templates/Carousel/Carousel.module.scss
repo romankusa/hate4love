@@ -1,0 +1,38 @@
+.carousel {
+  :global {
+    .slick-dots {
+      bottom: 10rem;
+
+      li {
+        width: 10%;
+
+        @screen lg {
+          width: 3%;
+        }
+
+        button {
+          background: var(--neutral-100);
+          height: 0.6rem;
+          border-radius: 0.3rem;
+
+          @screen lg {
+            border-radius: 0.5rem;
+            height: 1rem;
+          }
+        }
+
+        &.slick-active {
+          width: 20%;
+
+          @screen lg {
+            width: 7%;
+          }
+
+          button {
+            background: var(--secondary-500);
+          }
+        }
+      }
+    }
+  }
+}

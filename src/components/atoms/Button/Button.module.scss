@@ -1,7 +1,7 @@
 .button {
   font-weight: 600;
   font-size: 1.8rem;
-  color: var(--neutral-50);
+  color: var(--neutral-50) !important;
   background: var(--secondary-500);
   border-radius: 30px;
   padding: 0 2rem;
@@ -25,5 +25,19 @@
   img {
     height: 14px;
     width: auto;
+  }
+
+  &.secondary {
+    border: 1.5px solid var(--secondary-400);
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3.363px 16.814px 0px rgba(42, 42, 42, 0.15);
+    color: var(--secondary-400);
+
+    img {
+      height: 2rem;
+      @screen lg {
+        height: 2.6rem;
+      }
+    }
   }
 }

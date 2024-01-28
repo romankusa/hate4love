@@ -4,6 +4,8 @@ import Link from "next/link";
 import { HamburguerIcon } from "../HamburguerIcon/HamburguerIcon";
 import { Drawer } from "antd";
 import { useState } from "react";
+import { Button } from "@/components/atoms/Button/Button";
+import { CrossIcon } from "@/components/atoms/Icon";
 
 export const MobileNav = () => {
   const { data } = useAppStore.getState();
@@ -11,8 +13,23 @@ export const MobileNav = () => {
 
   return (
     <>
-      <HamburguerIcon onClick={() => setOpen(true)} />
-      <Drawer open={open} onClose={() => setOpen(false)}>
+      {open ? (
+        <button className={s.crossBtn} onClick={() => setOpen(false)}>
+          <CrossIcon />
+        </button>
+      ) : (
+        <HamburguerIcon onClick={() => setOpen(true)} />
+      )}
+      <Drawer
+        open={open}
+        onClose={() => setOpen(false)}
+        placement="top"
+        rootClassName={s.drawer}
+        closeIcon={false}
+        rootStyle={{
+          marginTop: open ? "10rem" : undefined,
+        }}
+      >
         <nav className={s.mobileNav}>
           <ul className={s.inner}>
             {data.layout.header.links.map((link) => (
@@ -20,6 +37,15 @@ export const MobileNav = () => {
                 <Link href={link.link}>{link.title}</Link>
               </li>
             ))}
+            <li>
+              <Button href={data.layout.header.button.link}>
+                <img
+                  src={data.layout.header.button.icon?.img}
+                  alt={data.layout.header.button.icon?.alt}
+                />
+                {data.layout.header.button.title}
+              </Button>
+            </li>
           </ul>
         </nav>
       </Drawer>

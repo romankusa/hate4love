@@ -1,0 +1,73 @@
+.hateforlove {
+  position: relative;
+  min-height: 70rem;
+  height: 100vh;
+  max-height: 90rem;
+  background: var(--background);
+
+  &:hover,
+  &:focus-within,
+  &:active {
+    :global {
+      .cover {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.6rem;
+  height: 100%;
+
+  @screen lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  // FIRST COLUMN
+  &:nth-child(1) {
+    .item:nth-child(1) {
+      height: 43.67%;
+    }
+    .item:nth-child(2) {
+      height: 54.56%;
+    }
+  }
+
+  // SECOND COLUMN
+  &:nth-child(2) {
+    .item:nth-child(1) {
+      height: 24.05%;
+    }
+    .item:nth-child(2) {
+      height: 43.67%;
+    }
+    .item:nth-child(3) {
+      height: 30.11%;
+    }
+  }
+
+  // THIRD COLUMN
+  &:nth-child(3) {
+    .item:nth-child(1) {
+      height: 63.44%;
+    }
+    .item:nth-child(2) {
+      height: 34.78%;
+    }
+  }
+}
+
+.item {
+  &:not(:last-of-type) {
+    margin-bottom: 1.6rem;
+  }
+}

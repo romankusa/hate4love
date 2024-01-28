@@ -1,0 +1,70 @@
+.hero {
+  min-height: 50rem;
+  max-height: 100rem;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  h1 {
+    color: var(--neutral-100);
+    text-align: center;
+    font-weight: 500;
+    margin: 0 auto;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -1.92px;
+
+    @screen md {
+      max-width: 50%;
+    }
+
+    @screen lg {
+      font-size: 7.2rem;
+      line-height: 8rem;
+      letter-spacing: -2.88px;
+    }
+  }
+
+  .titleHighlight {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+
+    @screen lg {
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 110%;
+      height: 100%;
+      background-image: url("/small-brush.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: -1;
+
+      @screen lg {
+        width: 56rem;
+        background-image: url("/large-brush.png");
+      }
+    }
+  }
+}

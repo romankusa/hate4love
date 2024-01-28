@@ -1,7 +1,4 @@
 import { Home } from "@/components/templates/Home/Home";
-import { Layout } from "@/components/templates/Layout/Layout";
-import { useAppStore } from "@/hooks/useAppStore";
-import { getContent } from "@/utils/getContent";
 
 export const getStaticPaths = async () => {
   return {

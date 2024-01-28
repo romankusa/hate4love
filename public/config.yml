@@ -113,58 +113,6 @@ collections:
             name: "copyright"
             widget: "string"
             i18n: true
-          - label: "Link sections"
-            name: "linkSections"
-            widget: "list"
-            minimize_collapsed: true
-            collapsed: true
-            i18n: true
-            summary: "{{fields.title}}"
-            fields:
-              - {
-                  label: Title,
-                  name: title,
-                  widget: string,
-                  i18n: true,
-                }
-              - label: Links
-                name: links
-                widget: list
-                minimize_collapsed: true
-                collapsed: true
-                i18n: true
-                fields:
-                  - {
-                      label: "Title",
-                      name: "title",
-                      widget: "string",
-                      i18n: true,
-                    }
-                  - {
-                      label: "Link",
-                      name: "link",
-                      widget: "string",
-                      i18n: true,
-                    }
-          - label: Additional links
-            name: additionalLinks
-            widget: list
-            minimize_collapsed: true
-            collapsed: true
-            i18n: true
-            fields:
-              - {
-                  label: "Title",
-                  name: "title",
-                  widget: "string",
-                  i18n: true,
-                }
-              - {
-                  label: "Link",
-                  name: "link",
-                  widget: "string",
-                  i18n: true,
-                }
   - name: "home"
     i18n: true
     create: true
@@ -336,6 +284,13 @@ collections:
                       allow_multiple: false,
                     }
                   - {
+                      label: "Imagen mobile",
+                      name: "mobileImg",
+                      widget: "image",
+                      allow_multiple: false,
+                      required: false,
+                    }
+                  - {
                       label: "Alt",
                       name: "alt",
                       widget: "string",
@@ -353,6 +308,13 @@ collections:
                       widget: "image",
                       i18n: true,
                       allow_multiple: false,
+                    }
+                  - {
+                      label: "Imagen mobile",
+                      name: "mobileImg",
+                      widget: "image",
+                      allow_multiple: false,
+                      required: false,
                     }
                   - {
                       label: "Alt",
@@ -425,6 +387,7 @@ collections:
                 name: secondary
                 widget: boolean
                 i18n: true
+                required: false
               - label: Icon
                 name: icon
                 widget: object
@@ -522,6 +485,7 @@ collections:
                       name: "mobileImg",
                       widget: "image",
                       allow_multiple: false,
+                      required: false,
                     }
                   - {
                       label: "Alt",
@@ -529,8 +493,144 @@ collections:
                       widget: "string",
                       i18n: true,
                     }
+          - label: Partners
+            name: partners
+            widget: list
+            minimize_collapsed: true
+            collapsed: true
+            fields:
+              - {
+                  label: "Imagen",
+                  name: "img",
+                  widget: "image",
+                  allow_multiple: false,
+                }
+              - { label: "Alt", name: "alt", widget: "string" }
           - label: "Youtube link"
             name: "ytLink"
             widget: "string"
             i18n: true
             required: false
+  - name: "mision"
+    label: "Mision"
+    i18n: true
+    create: true
+    folder: content/mision
+    format: "json"
+    identifier_field: slug
+    fields:
+      - label: "Slug"
+        name: "slug"
+        widget: "hidden"
+        default: "Main"
+        i18n: duplicate
+      - label: Metadata
+        name: metadata
+        widget: object
+        summary: "{{fields.titulo}}"
+        i18n: true
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              i18n: true,
+            }
+      - label: Hero
+        name: hero
+        widget: object
+        i18n: true
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+            i18n: true
+          - label: "Title highlight"
+            name: "highlight"
+            widget: "string"
+            i18n: true
+          - label: Background image
+            name: background
+            widget: object
+            i18n: true
+            summary: "{{fields.alt}}"
+            fields:
+              - {
+                  label: "Imagen",
+                  name: "img",
+                  widget: "image",
+                  allow_multiple: false,
+                }
+              - {
+                  label: "Imagen mobile",
+                  name: "mobileImg",
+                  widget: "image",
+                  allow_multiple: false,
+                }
+              - {
+                  label: "Alt",
+                  name: "alt",
+                  widget: "string",
+                  i18n: true,
+                }
+      - label: Content
+        name: content
+        widget: object
+        i18n: true
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+            i18n: true
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            required: false
+            i18n: true
+          - label: "Buttons"
+            name: "buttons"
+            widget: "list"
+            required: false
+            minimize_collapsed: true
+            collapsed: true
+            summary: "{{fields.title}}"
+            i18n: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+                i18n: true
+              - label: Link
+                name: link
+                widget: string
+                i18n: true
+              - label: Secondary
+                name: secondary
+                widget: boolean
+                i18n: true
+                required: false
+              - label: Icon
+                name: icon
+                widget: object
+                required: false
+                i18n: true
+                summary: "{{fields.alt}}"
+                fields:
+                  - {
+                      label: "Imagen",
+                      name: "img",
+                      widget: "image",
+                      allow_multiple: false,
+                    }
+                  - {
+                      label: "Alt",
+                      name: "alt",
+                      widget: "string",
+                      i18n: true,
+                    }

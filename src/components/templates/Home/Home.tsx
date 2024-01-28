@@ -5,9 +5,19 @@ import { Layout } from "../Layout/Layout";
 import { Locale } from "@/utils/constants";
 import { Hero } from "@/components/organisms/Hero/Hero";
 import { Numbers } from "./components/templates/Numbers/Numbers";
+import { Text } from "./components/templates/Text/Text";
+import { Youtube } from "./components/templates/Youtube/Youtube";
+import { Carousel } from "./components/templates/Carousel/Carousel";
+import { Hate4love } from "./components/templates/Hate4love/Hate4love";
+import { Partners } from "./components/templates/Partners/Partners";
 
 const components = {
   NUMBERS: Numbers,
+  TEXT: Text,
+  YT_VIDEO: Youtube,
+  CAROUSEL: Carousel,
+  HATE4LOVE: Hate4love,
+  PARTNERS: Partners,
 };
 
 export const Home: FC<{ locale: Locale }> = ({ locale }) => {

@@ -74,7 +74,7 @@
 
   --background: #ffecd7;
 
-  --site-padding: 1.6rem;
+  --site-padding: 2.4rem;
 
   @screen lg {
     --site-padding: 3.2rem;
@@ -88,6 +88,7 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 body {
