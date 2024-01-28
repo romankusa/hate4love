@@ -85,7 +85,11 @@ export const Text: FC<TextProps> = ({ data }) => {
       {hasButtons && (
         <div className="flex items-center justify-center gap-3">
           {data?.buttons?.map((btn) => (
-            <Button key={btn.title} secondary={btn.secondary}>
+            <Button
+              key={btn.title}
+              secondary={btn.secondary}
+              href={btn.link}
+            >
               {!btn.secondary && btn.icon && (
                 <Image src={btn.icon.img} alt={btn.icon.alt} />
               )}

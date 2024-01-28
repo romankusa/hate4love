@@ -14,9 +14,13 @@ export const Content = () => {
       <h6>{ctt.title}</h6>
       <Markdown>{ctt.body}</Markdown>
       {ctt?.buttons && (
-        <div className="flex items-center justify-center gap-3">
+        <div className="flex items-center justify-center gap-3 mt-10">
           {ctt?.buttons?.map((btn) => (
-            <Button key={btn.title} secondary={btn.secondary}>
+            <Button
+              key={btn.title}
+              secondary={btn.secondary}
+              href={btn.link}
+            >
               {!btn.secondary && btn.icon && (
                 <Image src={btn.icon.img} alt={btn.icon.alt} />
               )}
