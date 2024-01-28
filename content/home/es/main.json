@@ -188,6 +188,29 @@
           "img": "/vector.png"
         }
       }
+    },
+    {
+      "id": "ayuda",
+      "type": "TEXT",
+      "title": {
+        "text": "#hate4love",
+        "highlight": "4love",
+        "icon": {
+          "img": "",
+          "alt": ""
+        }
+      },
+      "buttons": [
+        {
+          "title": "Quiero donar",
+          "link": "/tdb",
+          "icon": {
+            "img": "/sparks.png",
+            "alt": "Brillos"
+          },
+          "secondary": false
+        }
+      ]
     }
   ],
   "metadata": {
