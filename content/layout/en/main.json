@@ -9,7 +9,9 @@
       }
     },
     "logo": {
-      "alt": "Logo"
+      "img": "/logo.png",
+      "alt": "Logo",
+      "mobileImg": "/group-96418-1-.png"
     },
     "links": [
       {

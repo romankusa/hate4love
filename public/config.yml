@@ -38,12 +38,14 @@ collections:
                   name: "img",
                   widget: "image",
                   allow_multiple: false,
+                  i18n: duplicate,
                 }
               - {
                   label: "Mobile image",
                   name: "mobileImg",
                   widget: "image",
                   allow_multiple: false,
+                  i18n: duplicate,
                 }
               - {
                   label: "Alt",
