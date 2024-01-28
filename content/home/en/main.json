@@ -2,16 +2,36 @@
   "slug": "Main",
   "sections": [
     {
-      "carousel": [
+      "id": "numbers",
+      "type": "NUMBERS",
+      "numbers": [
         {
-          "separator": "="
+          "number": 1000,
+          "text": "Actos de violencia"
+        },
+        {
+          "number": 1200,
+          "text": "Posts en Redes sociales"
+        },
+        {
+          "number": 1339,
+          "text": "Manifestaciones"
         }
       ]
     }
   ],
   "metadata": {
-    "title": "asda",
-    "description": "sdasd"
+    "title": "hate4love",
+    "description": "hate4love"
   },
-  "hero": {}
+  "hero": {
+    "logo": {
+      "alt": "Logo"
+    },
+    "title": "Help us transform hatred into love",
+    "text": "If you have witnessed an act of hatred towards Israel and the Jewish people on the street or online, report it using #HATE4LOVE and turn hatred into an act of love towards nature.",
+    "background": {
+      "alt": "Fingers heart shape"
+    }
+  }
 }

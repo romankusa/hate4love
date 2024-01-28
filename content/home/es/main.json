@@ -26,7 +26,7 @@
       }
     },
     {
-      "id": "mision",
+      "id": "mission",
       "type": "TEXT",
       "title": {
         "text": "3542",
@@ -44,7 +44,7 @@
         {
           "title": "Conocer más ",
           "secondary": true,
-          "link": "/mision",
+          "link": "mission",
           "icon": {
             "img": "/arrow.png",
             "alt": "Flecha"
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "id": "contexto",
+      "id": "context",
       "type": "YT_VIDEO",
       "ytLink": "https://www.youtube.com/embed/tgbNymZ7vqY"
     },
@@ -98,7 +98,7 @@
       "type": "CAROUSEL"
     },
     {
-      "id": "ayuda",
+      "id": "help",
       "type": "TEXT",
       "title": {
         "text": "#hate4love",
