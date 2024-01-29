@@ -11,8 +11,6 @@ interface YoutubeProps {
 }
 
 export const Youtube: FC<YoutubeProps> = ({ data }) => {
-  console.log({ data });
-
   return (
     <section id={data.id} className={s.yt}>
       <iframe src={data.ytLink} />

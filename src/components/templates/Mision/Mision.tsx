@@ -13,8 +13,12 @@ export const Mision: FC<{ locale: Locale }> = ({ locale }) => {
 
   return (
     <Layout>
-      <Hero />
-      <Content />
+      {data.mision?.content && (
+        <>
+          <Hero />
+          <Content />
+        </>
+      )}
     </Layout>
   );
 };
