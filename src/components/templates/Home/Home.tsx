@@ -10,6 +10,7 @@ import { Youtube } from "./components/templates/Youtube/Youtube";
 import { Carousel } from "./components/templates/Carousel/Carousel";
 import { Hate4love } from "./components/templates/Hate4love/Hate4love";
 import { Partners } from "./components/templates/Partners/Partners";
+import Head from "next/head";
 
 const components = {
   NUMBERS: Numbers,
@@ -27,6 +28,13 @@ export const Home: FC<{ locale: Locale }> = ({ locale }) => {
 
   return (
     <Layout>
+      <Head>
+        <title>{data.home.metadata.title}</title>
+        <meta
+          name="description"
+          content={data.home.metadata.description}
+        />
+      </Head>
       <Hero />
       {data.home.sections.map((section, index) => {
         const Component = (components as any)[section.type];
