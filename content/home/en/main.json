@@ -33,7 +33,7 @@
       "buttons": [
         {
           "title": "See more",
-          "link": "mission",
+          "link": "/mission",
           "icon": {
             "img": "/arrow.png",
             "alt": "Chevron right"
