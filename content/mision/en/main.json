@@ -1,3 +1,30 @@
 {
-  "slug": "Main"
+  "slug": "Main",
+  "metadata": {
+    "title": "Mission",
+    "description": "Mission"
+  },
+  "hero": {
+    "title": "We come together to sow love",
+    "background": {
+      "img": "/עצים-בנחל-נוקד_בוני-שיינמן-עובדת-קקל_056753-1.jpg",
+      "mobileImg": "/עצים-בנחל-נוקד_בוני-שיינמן-עובדת-קקל_056753-1-1-.jpg",
+      "alt": "Trees"
+    },
+    "highlight": "to sow love"
+  },
+  "content": {
+    "title": "Our mission",
+    "body": "In a world where antisemitism is on the rise, those of us who believe in freedom, equality, democracy, social justice, civic engagement, and respect for differences stand up with a clear purpose: to turn darkness into light, hatred into love.\n\nEach planted tree symbolizes a small victory over hatred. It is a tangible act of love for nature and humanity. Therefore, we invite you to join us. If you come across any anti-Jewish hate post, if you encounter a comment loaded with antisemitic prejudices, do not stay silent. Be the voice that counters hate alongside us.\n\nWe believe in the transformative power of love, in its ability to heal the deepest wounds and bring people together beyond differences. Join us if you believe that love will triumph over hate. Be part of the revolution of love.",
+    "buttons": [
+      {
+        "title": "Donate now",
+        "link": "/tbd",
+        "icon": {
+          "img": "/sparks.png",
+          "alt": "Sparks"
+        }
+      }
+    ]
+  }
 }
