@@ -89,6 +89,131 @@
           }
         }
       ]
+    },
+    {
+      "id": "help",
+      "type": "TEXT",
+      "title": {
+        "text": "#hate4love",
+        "highlight": "4love"
+      },
+      "body": "##### How can you help us?\n\nSimply by adding the hashtag #hate4love to those hateful comments and sharing it, you will leave a clear signal that love is stronger, so that we can continue building bridges instead of walls.",
+      "buttons": [
+        {
+          "title": "Donate now",
+          "link": "/tbd",
+          "icon": {
+            "img": "/sparks.png",
+            "alt": "Sparks"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hate4love",
+      "type": "HATE4LOVE",
+      "flipImages": [
+        {
+          "front": {
+            "img": "/image-474.png",
+            "mobileImg": "/image-74.png",
+            "alt": "Victim"
+          },
+          "back": {
+            "img": "/image-60.png",
+            "mobileImg": "/image-26.png",
+            "alt": "Trees"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-3.png",
+            "mobileImg": "/image-50.png",
+            "alt": "Protest"
+          },
+          "back": {
+            "img": "/image-23.png",
+            "mobileImg": "/image-29.png",
+            "alt": "Trees"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-71.png",
+            "mobileImg": "/image-72.png",
+            "alt": "Victims"
+          },
+          "back": {
+            "img": "/image-20.png",
+            "mobileImg": "/image-27.png",
+            "alt": "Trees"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-75.png",
+            "mobileImg": "/image-76.png",
+            "alt": "Protest"
+          },
+          "back": {
+            "img": "/image-22.png",
+            "mobileImg": "/image-28.png",
+            "alt": "Trees"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-77.png",
+            "mobileImg": "/image-78.png",
+            "alt": "Victims"
+          },
+          "back": {
+            "img": "/image-24.png",
+            "mobileImg": "/image-30.png",
+            "alt": "Trees"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-73.png",
+            "alt": "Victims"
+          },
+          "back": {
+            "img": "/image-21.png",
+            "alt": "Trees"
+          }
+        },
+        {
+          "front": {
+            "img": "/image-79.png",
+            "alt": "Victims"
+          },
+          "back": {
+            "img": "/image-25.png",
+            "alt": "Trees"
+          }
+        }
+      ],
+      "title": {
+        "text": "Turn hate into love",
+        "icon": {
+          "img": "/vector.png",
+          "alt": "Hand click"
+        }
+      }
+    },
+    {
+      "id": "partners",
+      "type": "PARTNERS",
+      "title": {
+        "text": "We are supported by:"
+      },
+      "partners": [
+        {
+          "img": "/logo-mjp-1-1.png",
+          "alt": "Madres Judias por la Paz"
+        }
+      ]
     }
   ],
   "metadata": {
