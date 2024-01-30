@@ -44,7 +44,7 @@
         {
           "title": "Conocer más ",
           "secondary": true,
-          "link": "mission",
+          "link": "/mission",
           "icon": {
             "img": "/arrow.png",
             "alt": "Flecha"
