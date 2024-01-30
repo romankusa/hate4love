@@ -1,3 +1,4 @@
+import { useAppStore } from "@/hooks/useAppStore";
 import Link from "next/link";
 import { ComponentProps, forwardRef, ReactElement } from "react";
 
@@ -12,14 +13,28 @@ export const AbstractButton = forwardRef<
     { href, type, to, ...props }: AbstractButtonProps,
     ref
   ): ReactElement => {
+    const locale = useAppStore.getState().locale;
+
     if (to) {
-      return <Link ref={ref} href={to} {...props} />;
+      return (
+        <Link
+          locale="en"
+          ref={ref}
+          href={to.includes("#") ? to : `/${locale}/${to}`}
+          {...props}
+        />
+      );
     }
 
     if (href) {
       return href.startsWith("/") ? (
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        <Link ref={ref} {...props} href={href} />
+        <Link
+          locale="en"
+          ref={ref}
+          {...props}
+          href={href.includes("#") ? href : `/${locale}/${href}`}
+        />
       ) : (
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         <a

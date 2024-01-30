@@ -9,7 +9,7 @@ import { Content } from "./components/Content/Content";
 export const Mision: FC<{ locale: Locale }> = ({ locale }) => {
   const data = getContent(locale) as AppStore["data"];
 
-  if (data) useAppStore.setState({ data });
+  if (data) useAppStore.setState({ data, locale });
 
   return (
     <Layout>

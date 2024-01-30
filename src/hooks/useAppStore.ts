@@ -4,6 +4,7 @@ import { Mision } from "@/types/Mision";
 import { create } from "zustand";
 
 export interface AppStore {
+  locale: string;
   data: {
     layout: Layout;
     home: Home;
@@ -12,5 +13,6 @@ export interface AppStore {
 }
 
 export const useAppStore = create<AppStore>(() => ({
+  locale: "",
   data: {} as any,
 }));

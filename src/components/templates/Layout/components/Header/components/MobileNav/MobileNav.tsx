@@ -33,7 +33,11 @@ export const MobileNav = () => {
         <nav className={s.mobileNav}>
           <ul className={s.inner}>
             {data.layout.header.links.map((link) => (
-              <li key={link.title} className={s.navItem}>
+              <li
+                key={link.title}
+                className={s.navItem}
+                onClick={() => setOpen(false)}
+              >
                 <Link href={link.link}>{link.title}</Link>
               </li>
             ))}

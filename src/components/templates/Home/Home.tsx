@@ -23,7 +23,7 @@ const components = {
 export const Home: FC<{ locale: Locale }> = ({ locale }) => {
   const data = getContent(locale) as AppStore["data"];
 
-  if (data) useAppStore.setState({ data });
+  if (data) useAppStore.setState({ data, locale });
 
   return (
     <Layout>
