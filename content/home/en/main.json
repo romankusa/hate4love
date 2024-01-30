@@ -45,6 +45,50 @@
         "img": "/information.png",
         "alt": "Trees"
       }
+    },
+    {
+      "id": "context",
+      "type": "YT_VIDEO",
+      "ytLink": "https://www.youtube.com/embed/tgbNymZ7vqY"
+    },
+    {
+      "id": "carousel",
+      "type": "CAROUSEL",
+      "carousel": [
+        {
+          "separator": "=",
+          "text": "1 antisemitic act of violence",
+          "highlight": "act of violence",
+          "largeText": "1 Tree",
+          "copyright": "Matt Artz",
+          "background": {
+            "img": "/matt-artz-ntrdndddyk8-unsplash.jpg",
+            "alt": "Trees"
+          }
+        },
+        {
+          "separator": "=",
+          "text": "1 antisemitic demonstration",
+          "highlight": "demonstration",
+          "largeText": "1 Tree",
+          "background": {
+            "img": "/steven-kamenar-mmjx78v7xs8-unsplash.jpg",
+            "alt": "Trees"
+          },
+          "copyright": "Steven Kamenar"
+        },
+        {
+          "separator": "=",
+          "text": "1 antisemitic post",
+          "highlight": "post",
+          "largeText": "1 Tree",
+          "copyright": "Andrew Coelho",
+          "background": {
+            "img": "/andrew-coelho-al7sa1asvdq-unsplash-1-.jpg",
+            "alt": "Trees"
+          }
+        }
+      ]
     }
   ],
   "metadata": {
