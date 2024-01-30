@@ -1,4 +1,7 @@
 .carousel {
+  max-width: 100vw;
+  overflow: hidden;
+
   :global {
     .slick-dots {
       bottom: 10rem;
