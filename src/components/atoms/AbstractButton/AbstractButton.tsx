@@ -20,7 +20,7 @@ export const AbstractButton = forwardRef<
         <Link
           locale="en"
           ref={ref}
-          href={to.includes("#") ? to : `/${locale}/${to}`}
+          href={`/${locale}/${to}`}
           {...props}
         />
       );
@@ -33,7 +33,7 @@ export const AbstractButton = forwardRef<
           locale="en"
           ref={ref}
           {...props}
-          href={href.includes("#") ? href : `/${locale}/${href}`}
+          href={`/${locale}/${href}`}
         />
       ) : (
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
