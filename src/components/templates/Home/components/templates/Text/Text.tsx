@@ -50,6 +50,7 @@ export const Text: FC<TextProps> = ({ data }) => {
       id={data.id}
       className={clsx(s.text, {
         [s.invert]: hasBackgroundImage,
+        [s.isHelp]: data.id === "help",
       })}
       style={backgroundStyle}
     >

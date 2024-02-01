@@ -6,6 +6,16 @@
     padding: 12rem 0 10rem;
   }
 
+  &.isHelp {
+    .title {
+      letter-spacing: 0.2px;
+    }
+
+    .titleHighlight {
+      font-weight: 600;
+    }
+  }
+
   .title {
     color: var(--neutral-800);
     text-align: center;

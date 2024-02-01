@@ -1,8 +1,9 @@
 .button {
   font-weight: 600;
   font-size: 1.8rem;
-  color: var(--neutral-50) !important;
+  color: var(--neutral-50);
   background: var(--secondary-500);
+  font-family: var(--font-primary);
   border-radius: 30px;
   padding: 0 2rem;
   height: 4.5rem;
@@ -20,6 +21,7 @@
 
   &:hover {
     filter: brightness(1.1);
+    color: var(--neutral-50);
   }
 
   img {
@@ -32,6 +34,15 @@
     background: rgba(0, 0, 0, 0.4);
     box-shadow: 0px 3.363px 16.814px 0px rgba(42, 42, 42, 0.15);
     color: var(--secondary-400);
+    transition: color 150ms ease, background 150ms ease,
+      border-color 150ms ease, opacity 150ms ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.6);
+      color: var(--secondary-300);
+      border-color: var(--secondary-300);
+      opacity: 0.6;
+    }
 
     img {
       height: 2rem;

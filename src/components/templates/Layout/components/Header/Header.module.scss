@@ -1,12 +1,19 @@
 .header {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 0;
   display: flex;
   align-items: center;
-  height: 10rem;
+  height: var(--header-height);
   background-color: rgba(46, 45, 45, 0.9);
   backdrop-filter: blur(5px);
   padding: 0 var(--site-padding);
+  transition: transform 150ms ease;
+  transform: translateY(-100%);
+  z-index: 100;
 
-  @screen lg {
-    height: 10rem;
+  &.active {
+    transform: translateY(0%);
   }
 }

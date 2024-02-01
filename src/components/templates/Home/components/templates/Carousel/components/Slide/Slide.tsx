@@ -32,7 +32,7 @@ export const Slide: FC<CarouselSlide> = ({
           }), lightgray 50% / cover no-repeat`,
         }}
       ></div>
-      <div>
+      <div className={s.slideInner}>
         <p className={s.text}>{finalText}</p>
         <span className={s.text}>{separator}</span>
         <p className={s.largeText}>{largeText}</p>

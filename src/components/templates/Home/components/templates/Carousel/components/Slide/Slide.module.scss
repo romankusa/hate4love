@@ -1,10 +1,12 @@
 .slide {
   position: relative;
   text-align: center;
-  padding: 15rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55rem;
 
   @screen lg {
-    padding: 10rem 0 0;
     min-height: 70rem;
     height: 100vh;
     max-height: 90rem;
@@ -21,14 +23,19 @@
     z-index: -2;
   }
 
-  .highlight {
-    display: inline-block;
-    position: relative;
-    white-space: nowrap;
+  .slideInner {
+    margin: 0 auto;
+    max-width: 45rem;
 
     @screen lg {
-      display: block;
+      max-width: 50%;
     }
+  }
+
+  .highlight {
+    display: block;
+    position: relative;
+    white-space: nowrap;
 
     &::after {
       content: "";
@@ -54,12 +61,11 @@
   .text {
     color: var(--neutral-50);
     font-weight: 600;
-    max-width: 50%;
     margin: 0 auto;
     font-size: 4.8rem;
     line-height: 5.6rem;
     letter-spacing: -1.92px;
-
+    font-family: var(--font-primary);
     @screen lg {
       font-size: 7.2rem;
       line-height: 8.5rem;
@@ -72,16 +78,19 @@
     font-size: 9rem;
     line-height: 8rem;
     letter-spacing: -3.6px;
+    white-space: nowrap;
+    font-family: var(--font-primary);
+    font-weight: 700;
 
     @screen lg {
       font-size: 20rem;
-      font-weight: 700;
       line-height: 20rem;
     }
   }
 
   .copy {
     color: var(--neutral-100);
+    font-family: var(--font-primary);
     letter-spacing: -0.48px;
     position: absolute;
     bottom: 1rem;

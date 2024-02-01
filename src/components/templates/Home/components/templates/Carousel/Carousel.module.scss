@@ -4,7 +4,11 @@
 
   :global {
     .slick-dots {
-      bottom: 10rem;
+      bottom: 6rem;
+
+      @screen lg {
+        bottom: 10rem;
+      }
 
       li {
         width: 10%;

@@ -51,6 +51,9 @@ export const MobileNav = () => {
               </Button>
             </li>
           </ul>
+          <p className={s.copyright}>
+            {data.layout.footer.copyright}
+          </p>
         </nav>
       </Drawer>
     </>
