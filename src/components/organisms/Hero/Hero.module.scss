@@ -1,8 +1,7 @@
 .hero {
   width: 100%;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: top center;
+  background-position: center center;
   padding-bottom: 20rem;
 
   @screen lg {
@@ -10,7 +9,6 @@
     min-height: 70rem;
     max-height: 100rem;
     padding-bottom: unset;
-    background-position: center center;
   }
 
   .heroContent {
