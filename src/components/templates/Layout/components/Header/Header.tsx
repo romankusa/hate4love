@@ -13,7 +13,7 @@ import clsx from "clsx";
 export const Header = () => {
   const { data } = useAppStore.getState();
   const { isDesktop } = useDimensions();
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     let prevScrollpos = window.scrollY;
