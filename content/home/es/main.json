@@ -53,9 +53,12 @@
       ]
     },
     {
-      "id": "context",
-      "type": "YT_VIDEO",
-      "ytLink": "https://www.youtube.com/embed/uko2r7jf_2U?si=NU_FCQ032TJntDNa"
+      "id": "video",
+      "type": "VIDEO",
+      "video": {
+        "source": "/hate4love.mp4",
+        "placeholderImg": "/captura-de-pantalla-2023-11-22-a-la-s-12.42-1.jpg"
+      }
     },
     {
       "carousel": [
@@ -225,11 +228,6 @@
           "alt": "Madres judias por la paz"
         }
       ]
-    },
-    {
-      "video": "/hate4love.mp4",
-      "id": "video",
-      "type": "VIDEO"
     }
   ],
   "metadata": {
