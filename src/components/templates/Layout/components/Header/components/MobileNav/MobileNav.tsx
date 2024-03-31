@@ -1,12 +1,12 @@
 import { useAppStore } from "@/hooks/useAppStore";
 import s from "./MobileNav.module.scss";
-import Link from "next/link";
 import { HamburguerIcon } from "../HamburguerIcon/HamburguerIcon";
 import { Drawer, Dropdown } from "antd";
 import { useState } from "react";
 import { Button } from "@/components/atoms/Button/Button";
 import { CrossIcon } from "@/components/atoms/Icon";
 import { Image } from "@/components/atoms/Image/Image";
+import { AbstractButton } from "@/components/atoms/AbstractButton/AbstractButton";
 
 export const MobileNav = () => {
   const { data } = useAppStore.getState();
@@ -84,7 +84,9 @@ export const MobileNav = () => {
                   className={s.navItem}
                   onClick={() => setOpen(false)}
                 >
-                  <Link href={link.link}>{link.title}</Link>
+                  <AbstractButton href={link.link}>
+                    {link.title}
+                  </AbstractButton>
                 </li>
               );
             })}

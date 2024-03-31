@@ -1,15 +1,15 @@
 import { useAppStore } from "@/hooks/useAppStore";
 
 import s from "./Logo.module.scss";
-import Link from "next/link";
 import { useDimensions } from "@/hooks/useDimensions";
+import { AbstractButton } from "@/components/atoms/AbstractButton/AbstractButton";
 
 export const Logo = () => {
   const { isDesktop } = useDimensions();
   const state = useAppStore.getState();
 
   return (
-    <Link href="/">
+    <AbstractButton href="/">
       <img
         className={s.logo}
         src={
@@ -19,6 +19,6 @@ export const Logo = () => {
         }
         alt={state.data.layout.header.logo.alt}
       />
-    </Link>
+    </AbstractButton>
   );
 };

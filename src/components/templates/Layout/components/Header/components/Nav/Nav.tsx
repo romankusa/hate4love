@@ -6,6 +6,7 @@ import { Dropdown } from "antd";
 import { Image } from "@/components/atoms/Image/Image";
 import { useLocaleChange } from "@/hooks/useLocaleChange";
 import { Locale } from "@/utils/constants";
+import { AbstractButton } from "@/components/atoms/AbstractButton/AbstractButton";
 
 export const Nav = () => {
   const { data } = useAppStore.getState();
@@ -43,7 +44,7 @@ export const Nav = () => {
                 rootClassName={s.dropdown}
                 menu={{ items }}
                 trigger={["click"]}
-                placement="bottomCenter"
+                placement="bottom"
               >
                 <button className={s.navItem}>
                   <Image src={link.icon?.img} alt={link.icon?.alt} />
@@ -56,7 +57,9 @@ export const Nav = () => {
 
         return (
           <li key={link.title} className={s.navItem}>
-            <Link href={link.link}>{link.title}</Link>
+            <AbstractButton href={link.link}>
+              {link.title}
+            </AbstractButton>
           </li>
         );
       })}
