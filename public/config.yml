@@ -243,6 +243,7 @@ collections:
               - { label: "hate4love Images", value: "HATE4LOVE" }
               - { label: "Partners", value: "PARTNERS" }
               - { label: "YT Video", value: "YT_VIDEO" }
+              - { label: "Video", value: "VIDEO" }
 
           - label: Image
             name: image
@@ -526,6 +527,11 @@ collections:
             name: "ytLink"
             widget: "string"
             i18n: true
+            required: false
+          - label: "Video"
+            name: "video"
+            i18n: true
+            widget: "file"
             required: false
   - name: "mision"
     label: "Mision"
