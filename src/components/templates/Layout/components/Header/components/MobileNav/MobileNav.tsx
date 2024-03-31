@@ -5,16 +5,18 @@ import { Drawer, Dropdown } from "antd";
 import { useState } from "react";
 import { Button } from "@/components/atoms/Button/Button";
 import { CrossIcon } from "@/components/atoms/Icon";
-import { Image } from "@/components/atoms/Image/Image";
 import { AbstractButton } from "@/components/atoms/AbstractButton/AbstractButton";
+import { useLocaleChange } from "@/hooks/useLocaleChange";
+import { Locale } from "@/utils/constants";
 
 export const MobileNav = () => {
   const { data } = useAppStore.getState();
   const [open, setOpen] = useState(false);
+  const { changeLocale } = useLocaleChange();
 
   const submenuActions = {
-    LANG_EN: () => {},
-    LANG_ES: () => {},
+    LANG_EN: () => changeLocale(Locale.EN),
+    LANG_ES: () => changeLocale(Locale.ES),
   } as any;
 
   return (
@@ -51,7 +53,7 @@ export const MobileNav = () => {
                           : undefined
                       }
                     >
-                      <Image
+                      <img
                         src={item.icon?.img}
                         alt={item.icon?.alt}
                       />
@@ -68,7 +70,7 @@ export const MobileNav = () => {
                       trigger={["click"]}
                     >
                       <button className={s.navItem}>
-                        <Image
+                        <img
                           src={link.icon?.img}
                           alt={link.icon?.alt}
                         />

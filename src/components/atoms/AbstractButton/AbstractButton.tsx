@@ -20,7 +20,7 @@ export const AbstractButton = forwardRef<
         <Link
           locale="en"
           ref={ref}
-          href={`/${locale}/${to}`.replace(/\/\//g, "")}
+          href={`/${locale}/${to}`.replace(/\/\//g, "/")}
           {...props}
         />
       );

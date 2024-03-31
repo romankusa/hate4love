@@ -1,9 +1,7 @@
 import { useAppStore } from "@/hooks/useAppStore";
-import Link from "next/link";
 
 import s from "./Nav.module.scss";
 import { Dropdown } from "antd";
-import { Image } from "@/components/atoms/Image/Image";
 import { useLocaleChange } from "@/hooks/useLocaleChange";
 import { Locale } from "@/utils/constants";
 import { AbstractButton } from "@/components/atoms/AbstractButton/AbstractButton";
@@ -32,7 +30,7 @@ export const Nav = () => {
                     : undefined
                 }
               >
-                <Image src={item.icon?.img} alt={item.icon?.alt} />
+                <img src={item.icon?.img} alt={item.icon?.alt} />
                 {item.title}
               </button>
             ),
@@ -47,7 +45,7 @@ export const Nav = () => {
                 placement="bottom"
               >
                 <button className={s.navItem}>
-                  <Image src={link.icon?.img} alt={link.icon?.alt} />
+                  <img src={link.icon?.img} alt={link.icon?.alt} />
                   {link.title}
                 </button>
               </Dropdown>

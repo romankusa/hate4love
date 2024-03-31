@@ -7,7 +7,12 @@ export const useDimensions = () => {
   );
 
   const getWindowSize = () => {
-    if (typeof window === "undefined") return {};
+    if (typeof window === "undefined")
+      return {
+        isDesktop: true,
+        isMobile: false,
+        isTablet: false,
+      };
 
     const isMobile = window.innerWidth < 768;
     const isTablet =

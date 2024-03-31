@@ -1,5 +1,5 @@
 import { Locale } from "@/utils/constants";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 function getPathWithoutLanguage(url: string) {
   const locales = Object.values(Locale);
@@ -17,12 +17,13 @@ function getPathWithoutLanguage(url: string) {
 }
 
 export const useLocaleChange = () => {
-  const { push } = useRouter();
   const pathname = usePathname();
 
   const changeLocale = (locale: Locale) => {
     const path = getPathWithoutLanguage(pathname);
-    window.location.assign(`/${locale}/${path}`);
+    window.location.assign(
+      `/${locale}/${path}`.replace(/\/\//g, "/")
+    );
   };
 
   return { changeLocale };
