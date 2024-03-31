@@ -136,8 +136,8 @@ collections:
                     name: action
                     widget: select
                     options:
-                      - { label: "English", value: "LANG_ES" }
-                      - { label: "Spanish", value: "LANG_EN" }
+                      - { label: "English", value: "LANG_EN" }
+                      - { label: "Spanish", value: "LANG_ES" }
           - label: Button
             name: button
             widget: object

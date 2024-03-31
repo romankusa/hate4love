@@ -3,8 +3,54 @@
   font-weight: 600;
   color: var(--neutral-50);
   transition: color 150ms ease;
+  display: inline-flex;
+  gap: 0.6rem;
+  align-items: center;
+
+  img {
+    width: 2.4rem;
+    height: auto;
+  }
 
   &:hover {
     color: var(--primary-200);
+  }
+}
+
+.dropdown {
+  :global {
+    .ant-dropdown-menu,
+    .ant-dropdown-menu-item {
+      padding: 0 !important;
+      margin: 0 !important;
+      background: var(--neutral-777) !important;
+    }
+
+    .ant-dropdown-menu-item {
+      color: var(--neutral-50) !important;
+
+      &:hover {
+        background: var(--primary-470) !important;
+      }
+    }
+  }
+}
+
+.submenuItem {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  display: inline-flex;
+  gap: 0.6rem;
+  align-items: center;
+  // background: var(--primary-470);
+  color: var(--neutral-50);
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.6rem;
+  font-size: 1.8rem;
+
+  img {
+    width: 2.4rem;
+    height: auto;
   }
 }

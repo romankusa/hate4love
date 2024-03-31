@@ -13,6 +13,12 @@ export interface Header {
 export interface Link {
   title: string;
   link: string;
+  icon?: Image;
+  submenu?: {
+    title?: string;
+    icon?: Image;
+    action?: string;
+  }[];
 }
 
 export interface Button {

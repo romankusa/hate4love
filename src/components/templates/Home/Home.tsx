@@ -28,8 +28,6 @@ export const Home: FC<{ locale: Locale }> = ({ locale }) => {
 
   if (data) useAppStore.setState({ data, locale });
 
-  console.log({ data });
-
   return (
     <Layout>
       <Head>

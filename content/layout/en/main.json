@@ -44,7 +44,7 @@
               "img": "/🇬🇧.png",
               "alt": "English"
             },
-            "action": "LANG_ES"
+            "action": "LANG_EN"
           },
           {
             "title": "Español",
@@ -52,7 +52,7 @@
               "img": "/🇪🇸.png",
               "alt": "Español"
             },
-            "action": "LANG_EN"
+            "action": "LANG_ES"
           }
         ]
       }
