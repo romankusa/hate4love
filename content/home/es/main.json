@@ -225,6 +225,11 @@
           "alt": "Madres judias por la paz"
         }
       ]
+    },
+    {
+      "video": "/hate4love.mp4",
+      "id": "video",
+      "type": "VIDEO"
     }
   ],
   "metadata": {
