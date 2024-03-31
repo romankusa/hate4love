@@ -17,6 +17,31 @@
       {
         "title": "¿Quiénes nos apoyan?",
         "link": "/#partners"
+      },
+      {
+        "title": "ES",
+        "icon": {
+          "img": "/globe-1.png",
+          "alt": "Globo"
+        },
+        "submenu": [
+          {
+            "title": "Español",
+            "icon": {
+              "img": "/🇪🇸.png",
+              "alt": "Español"
+            },
+            "action": "LANG_EN"
+          },
+          {
+            "title": "English",
+            "icon": {
+              "img": "/🇬🇧.png",
+              "alt": "English"
+            },
+            "action": "LANG_ES"
+          }
+        ]
       }
     ],
     "button": {

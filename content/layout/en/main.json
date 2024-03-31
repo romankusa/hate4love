@@ -30,6 +30,31 @@
       {
         "title": "Who supports us?",
         "link": "/#partners"
+      },
+      {
+        "title": "EN",
+        "icon": {
+          "img": "/globe-1.png",
+          "alt": "Globe"
+        },
+        "submenu": [
+          {
+            "title": "English",
+            "icon": {
+              "img": "/🇬🇧.png",
+              "alt": "English"
+            },
+            "action": "LANG_ES"
+          },
+          {
+            "title": "Español",
+            "icon": {
+              "img": "/🇪🇸.png",
+              "alt": "Español"
+            },
+            "action": "LANG_EN"
+          }
+        ]
       }
     ]
   },
