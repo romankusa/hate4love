@@ -70,8 +70,74 @@ collections:
                   label: Link,
                   name: link,
                   widget: string,
+                  required: false,
                   i18n: true,
                 }
+              - label: Icon
+                name: icon
+                widget: object
+                required: false
+                i18n: true
+                summary: "{{fields.alt}}"
+                fields:
+                  - {
+                      label: "Imagen",
+                      name: "img",
+                      widget: "image",
+                      required: false,
+                      allow_multiple: false,
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: "Alt",
+                      name: "alt",
+                      required: false,
+                      widget: "string",
+                      i18n: true,
+                    }
+              - label: "Submenu"
+                name: "submenu"
+                widget: "list"
+                minimize_collapsed: true
+                collapsed: true
+                required: false
+                i18n: true
+                summary: "{{fields.title}}"
+                fields:
+                  - {
+                      label: Title,
+                      name: title,
+                      widget: string,
+                      i18n: true,
+                    }
+                  - label: Icon
+                    name: icon
+                    widget: object
+                    required: false
+                    i18n: true
+                    summary: "{{fields.alt}}"
+                    fields:
+                      - {
+                          label: "Imagen",
+                          name: "img",
+                          widget: "image",
+                          required: false,
+                          allow_multiple: false,
+                          i18n: duplicate,
+                        }
+                      - {
+                          label: "Alt",
+                          name: "alt",
+                          required: false,
+                          widget: "string",
+                          i18n: true,
+                        }
+                  - label: Action
+                    name: action
+                    widget: select
+                    options:
+                      - { label: "English", value: "LANG_ES" }
+                      - { label: "Spanish", value: "LANG_EN" }
           - label: Button
             name: button
             widget: object

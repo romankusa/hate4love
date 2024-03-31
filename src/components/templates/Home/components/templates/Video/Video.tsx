@@ -8,15 +8,23 @@ const ReactPlayer = dynamic(import("react-player"), {
 
 interface VideoProps {
   data: {
-    video: string;
     id: string;
+    video: {
+      source: string;
+      placeholderImg: string;
+    };
   };
 }
 
 export const Video: FC<VideoProps> = ({ data }) => {
   return (
     <section id={data?.id} className={s.video}>
-      <ReactPlayer playsinline light controls url={data.video} />
+      <ReactPlayer
+        playsinline
+        light={data.video.placeholderImg}
+        controls
+        url={data.video.source}
+      />
     </section>
   );
 };
