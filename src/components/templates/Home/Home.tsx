@@ -11,6 +11,7 @@ import { Carousel } from "./components/templates/Carousel/Carousel";
 import { Hate4love } from "./components/templates/Hate4love/Hate4love";
 import { Partners } from "./components/templates/Partners/Partners";
 import Head from "next/head";
+import { Video } from "./components/templates/Video/Video";
 
 const components = {
   NUMBERS: Numbers,
@@ -19,12 +20,15 @@ const components = {
   CAROUSEL: Carousel,
   HATE4LOVE: Hate4love,
   PARTNERS: Partners,
+  VIDEO: Video,
 };
 
 export const Home: FC<{ locale: Locale }> = ({ locale }) => {
   const data = getContent(locale) as AppStore["data"];
 
   if (data) useAppStore.setState({ data, locale });
+
+  console.log({ data });
 
   return (
     <Layout>
@@ -38,6 +42,8 @@ export const Home: FC<{ locale: Locale }> = ({ locale }) => {
       <Hero />
       {data.home.sections.map((section, index) => {
         const Component = (components as any)[section.type];
+
+        if (!Component) return null;
 
         return <Component key={index} data={section} />;
       })}

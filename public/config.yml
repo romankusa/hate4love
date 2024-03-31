@@ -530,9 +530,27 @@ collections:
             required: false
           - label: "Video"
             name: "video"
-            i18n: true
-            widget: "file"
             required: false
+            widget: "object"
+            summary: "{{fields.text}}"
+            i18n: true
+            fields:
+              - label: "Description"
+                name: "text"
+                widget: "string"
+                i18n: true
+                required: false
+              - label: "Source"
+                name: "source"
+                widget: "file"
+                i18n: true
+                required: false
+              - label: "Placeholder image"
+                name: "placeholderImg"
+                widget: "image"
+                allow_multiple: false
+                required: false
+                i18n: duplicate
   - name: "mision"
     label: "Mision"
     i18n: true

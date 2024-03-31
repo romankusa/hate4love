@@ -1,0 +1,20 @@
+.video {
+  padding: 3.2rem 0;
+
+  @screen lg {
+    padding: 5.2rem 0;
+  }
+
+  & > div {
+    width: calc(100% - 64px) !important;
+    height: unset !important;
+    margin: 0 auto;
+    border-radius: 15px;
+    aspect-ratio: 1/1;
+
+    @screen lg {
+      width: 80%;
+      aspect-ratio: 16/9;
+    }
+  }
+}
