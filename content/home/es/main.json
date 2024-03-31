@@ -53,7 +53,7 @@
       ]
     },
     {
-      "id": "video",
+      "id": "context",
       "type": "VIDEO",
       "video": {
         "source": "/hate4love.mp4",
