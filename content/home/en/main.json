@@ -6,15 +6,15 @@
       "type": "NUMBERS",
       "numbers": [
         {
-          "number": 1000,
+          "number": 3245678,
           "text": "Acts of violence"
         },
         {
-          "number": 1200,
+          "number": 7892431,
           "text": "Social media posts"
         },
         {
-          "number": 1339,
+          "number": 5674920,
           "text": "Demonstrations"
         }
       ]
@@ -198,7 +198,7 @@
         }
       ],
       "title": {
-        "text": "Turn hate into love",
+        "text": "Look how the planted trees are looking",
         "icon": {
           "img": "/vector.png",
           "alt": "Hand click"

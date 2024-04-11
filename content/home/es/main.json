@@ -6,15 +6,15 @@
       "type": "NUMBERS",
       "numbers": [
         {
-          "number": 1000,
+          "number": 3245678,
           "text": "Actos de violencia"
         },
         {
-          "number": 1200,
+          "number": 7892431,
           "text": "Posts en Redes sociales"
         },
         {
-          "number": 1342,
+          "number": 5674920,
           "text": "Manifestaciones"
         }
       ],
@@ -210,7 +210,7 @@
         }
       ],
       "title": {
-        "text": "Convierte el odio en amor",
+        "text": "Mira como van quedando los arboles plantados",
         "icon": {
           "img": "/vector.png"
         }
