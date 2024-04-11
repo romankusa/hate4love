@@ -18,11 +18,19 @@
       color: var(--neutral-800);
       text-align: center;
       font-family: var(--font-secondary);
-      font-size: 9rem;
+      font-size: 6rem;
       font-weight: 500;
       line-height: 7rem;
       display: block;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
+
+      @screen lg {
+        font-size: 6.5rem;
+      }
+
+      @screen xl {
+        font-size: 7.4rem;
+      }
     }
 
     .text {

@@ -20,8 +20,8 @@
     color: var(--neutral-800);
     text-align: center;
     font-family: var(--font-secondary);
-    font-size: 9rem;
-    line-height: 8rem;
+    font-size: 5rem;
+    line-height: 6rem;
     font-style: normal;
     font-weight: 500;
     display: flex;
@@ -29,6 +29,11 @@
     justify-content: center;
 
     @screen lg {
+      line-height: 13rem;
+      font-size: 12rem;
+    }
+
+    @screen xl {
       line-height: 17rem;
       font-size: 15rem;
     }
@@ -41,7 +46,7 @@
   }
 
   .titleIcon {
-    height: 8.1rem;
+    height: 5rem;
 
     @screen lg {
       height: 15rem;

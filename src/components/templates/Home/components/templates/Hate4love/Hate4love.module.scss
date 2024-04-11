@@ -5,15 +5,15 @@
   max-height: 90rem;
   background: var(--background);
 
-  &:hover,
-  &:focus-within,
-  &:active {
-    :global {
-      .cover {
-        opacity: 0;
-      }
-    }
-  }
+  // &:hover,
+  // &:focus-within,
+  // &:active {
+  //   :global {
+  //     .cover {
+  //       opacity: 0;
+  //     }
+  //   }
+  // }
 }
 
 .grid {

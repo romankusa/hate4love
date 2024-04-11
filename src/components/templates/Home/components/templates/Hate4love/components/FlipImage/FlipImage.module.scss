@@ -18,13 +18,13 @@
     transform-style: preserve-3d;
   }
 
-  &:hover,
-  &:focus-within,
-  &:active {
-    .inner {
-      transform: rotateY(-180deg);
-    }
-  }
+  // &:hover,
+  // &:focus-within,
+  // &:active {
+  //   .inner {
+  //     transform: rotateY(-180deg);
+  //   }
+  // }
 
   .front,
   .back {

@@ -8,8 +8,8 @@ export const FlipImage: FC<FlipImageProps> = (data) => {
   return (
     <div className={s.flipImage}>
       <div className={s.inner}>
-        <Image className={s.front} src={data.front.img} />
-        <Image className={s.back} src={data.back.img} />
+        {/* <Image className={s.front} src={data.front.img} /> */}
+        <Image className={s.front} src={data.back.img} />
       </div>
     </div>
   );
